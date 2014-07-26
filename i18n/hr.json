@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dalibor Bosits",
+			"Excaliboor",
+			"SpeedyGonsales"
+		]
+	},
+	"citethispage-desc": "Dodaje posebnu stranicu za [[Special:Cite|citiranje]] i link u okvir za alate",
+	"citethispage-link": "Citiraj ovaj članak",
+	"tooltip-citethispage": "Informacije o tome kako citirati ovu stranicu",
+	"citethispage": "Citiranje",
+	"citethispage-change-target": "Stranica:",
+	"citethispage-change-submit": "Citiraj"
+}

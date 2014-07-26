@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kaffi",
+			"Robby",
+			"Soued031"
+		]
+	},
+	"citethispage-desc": "Setzt eng [[Special:Cite|Zitatioun op dëser Spezialsäit]] bei an e Link an d'Geschiirkëscht",
+	"citethispage-link": "Dës Säit zitéieren",
+	"tooltip-citethispage": "Informatioune wéi een dës Säit zitéiere kann",
+	"citethispage": "Zitéierhëllef",
+	"citethispage-change-target": "Säit:",
+	"citethispage-change-submit": "weisen"
+}
