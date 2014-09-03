@@ -4,10 +4,10 @@
 			"Sp5uhe"
 		]
 	},
+	"citethispage": "Bibliografia",
 	"citethispage-desc": "Dodaje stronę specjalną i guzik w toolbarze edycyjnym do obsługi [[Special:Cite|cytowania]]",
 	"citethispage-link": "Cytowanie tego artykułu",
 	"tooltip-citethispage": "Informacja o tym jak należy cytować tę stronę",
-	"citethispage": "Bibliografia",
-	"citethispage-change-target": "Strona:",
-	"citethispage-change-submit": "stwórz wpis bibliograficzny"
+	"citethispage-change-submit": "stwórz wpis bibliograficzny",
+	"citethispage-change-target": "Strona:"
 }

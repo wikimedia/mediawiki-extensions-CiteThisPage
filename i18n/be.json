@@ -4,10 +4,10 @@
 			"Хомелка"
 		]
 	},
+	"citethispage": "Спаслацца",
 	"citethispage-desc": "Дадае [[Special:Cite|цытату]] адмысловых старонак і спасылку панэлі інструментаў",
 	"citethispage-link": "Цытаваць гэту старонку",
 	"tooltip-citethispage": "Інфармацыя пра тое, як цытаваць гэтую старонку",
-	"citethispage": "Спаслацца",
-	"citethispage-change-target": "Старонка:",
-	"citethispage-change-submit": "Спаслацца"
+	"citethispage-change-submit": "Спаслацца",
+	"citethispage-change-target": "Старонка:"
 }

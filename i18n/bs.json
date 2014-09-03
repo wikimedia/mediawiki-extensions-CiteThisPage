@@ -4,10 +4,10 @@
 			"CERminator"
 		]
 	},
+	"citethispage": "Citiranje",
 	"citethispage-desc": "Dodaje posebnu stranicu za [[Special:Cite|citiranje]] i link u alatnoj kutiji",
 	"citethispage-link": "Citiraj ovu stranicu",
 	"tooltip-citethispage": "Informacije kako citirati ovu stranicu",
-	"citethispage": "Citiranje",
-	"citethispage-change-target": "Stranica:",
-	"citethispage-change-submit": "Citiraj"
+	"citethispage-change-submit": "Citiraj",
+	"citethispage-change-target": "Stranica:"
 }

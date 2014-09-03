@@ -4,10 +4,10 @@
 			"Hanberke"
 		]
 	},
+	"citethispage": "Sitirle",
 	"citethispage-desc": "[[Special:Cite|Sitirle]] ýörite sahypasyny we gural sandygy çykgydyny goşýar",
 	"citethispage-link": "Sahypany sitirle",
 	"tooltip-citethispage": "Bu sahypany nähili sitirlemelidigi hakda maglumat",
-	"citethispage": "Sitirle",
-	"citethispage-change-target": "Sahypa:",
-	"citethispage-change-submit": "Sitirle"
+	"citethispage-change-submit": "Sitirle",
+	"citethispage-change-target": "Sahypa:"
 }

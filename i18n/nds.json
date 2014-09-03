@@ -4,9 +4,9 @@
 			"Slomox"
 		]
 	},
+	"citethispage": "Ziteerhelp",
 	"citethispage-desc": "Föögt en [[Special:Cite|Spezialsied för Zitaten]] un en Lenk dorop in’n Kasten Warktüüch to",
 	"citethispage-link": "Disse Siet ziteren",
-	"citethispage": "Ziteerhelp",
-	"citethispage-change-target": "Siet:",
-	"citethispage-change-submit": "Ziteren"
+	"citethispage-change-submit": "Ziteren",
+	"citethispage-change-target": "Siet:"
 }

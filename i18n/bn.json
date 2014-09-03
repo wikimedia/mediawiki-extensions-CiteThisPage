@@ -5,9 +5,9 @@
 			"Zaheen"
 		]
 	},
+	"citethispage": "উদ্ধৃত",
 	"citethispage-desc": "একটি বিশেষ [[Special:Cite|উদ্ধৃতি]] পাতা ও টুলবক্স সংযোগ যোগ করে",
 	"citethispage-link": "এ পাতাটি উদ্ধৃত করো",
-	"citethispage": "উদ্ধৃত",
-	"citethispage-change-target": "পাতা:",
-	"citethispage-change-submit": "উদ্ধৃত করো"
+	"citethispage-change-submit": "উদ্ধৃত করো",
+	"citethispage-change-target": "পাতা:"
 }

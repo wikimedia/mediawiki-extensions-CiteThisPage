@@ -1,8 +1,8 @@
 {
 	"@metadata": [],
+	"citethispage": "引用文章",
 	"citethispage-desc": "加一個[[Special:Cite|引用]]特別頁同埋一個工具箱連結",
 	"citethispage-link": "引用呢篇文",
-	"citethispage": "引用文章",
-	"citethispage-change-target": "版：",
-	"citethispage-change-submit": "引用"
+	"citethispage-change-submit": "引用",
+	"citethispage-change-target": "版："
 }

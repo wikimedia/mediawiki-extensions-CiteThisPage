@@ -5,10 +5,10 @@
 			"Haqmar"
 		]
 	},
+	"citethispage": "Өҙөмтәләү",
 	"citethispage-desc": "[[Special:Cite|Өҙөмтә яһау]] махсус битен һәм ҡоралдарҙа һылтанма өҫтәй",
 	"citethispage-link": "Биттән өҙөмтә яһарға",
 	"tooltip-citethispage": "Был битте нисек өҙөмтәләргә кәрәклеге тураһында мәғлүмәт",
-	"citethispage": "Өҙөмтәләү",
-	"citethispage-change-target": "Бит:",
-	"citethispage-change-submit": "Өҙөмтәләргә"
+	"citethispage-change-submit": "Өҙөмтәләргә",
+	"citethispage-change-target": "Бит:"
 }

@@ -4,10 +4,10 @@
 			"HalanTul"
 		]
 	},
+	"citethispage": "Цитата",
 	"citethispage-desc": "Аналлаах [[Special:Cite|быһа тардыы]] сирэйин уонна үнүстүрүмүөннэргэ ыйынньык эбэн биэрэр",
 	"citethispage-link": "Сирэйи цитируйдааһын",
 	"tooltip-citethispage": "Бу сирэйи хайдах цитируйдуур туһунан",
-	"citethispage": "Цитата",
-	"citethispage-change-target": "Сирэй:",
-	"citethispage-change-submit": "Цитаата"
+	"citethispage-change-submit": "Цитаата",
+	"citethispage-change-target": "Сирэй:"
 }

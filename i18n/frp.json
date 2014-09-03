@@ -4,10 +4,10 @@
 			"ChrisPtDe"
 		]
 	},
+	"citethispage": "Citacion",
 	"citethispage-desc": "Apond una pâge spèciâla [[Special:Cite|citacion]] et un lim dens la bouèta d’outils.",
 	"citethispage-link": "Citar ceta pâge",
 	"tooltip-citethispage": "Enformacions sur coment citar ceta pâge",
-	"citethispage": "Citacion",
-	"citethispage-change-target": "Pâge :",
-	"citethispage-change-submit": "Citar"
+	"citethispage-change-submit": "Citar",
+	"citethispage-change-target": "Pâge :"
 }

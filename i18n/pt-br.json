@@ -5,10 +5,10 @@
 			"Giro720"
 		]
 	},
+	"citethispage": "Citar",
 	"citethispage-desc": "Adiciona uma página especial de [[Special:Cite|citação]] e link para a caixa de ferramentas",
 	"citethispage-link": "Citar esta página",
 	"tooltip-citethispage": "Informação sobre como citar esta página",
-	"citethispage": "Citar",
-	"citethispage-change-target": "Página:",
-	"citethispage-change-submit": "Citar"
+	"citethispage-change-submit": "Citar",
+	"citethispage-change-target": "Página:"
 }

@@ -4,10 +4,10 @@
 			"Ильнар"
 		]
 	},
+	"citethispage": "Күчермәләү",
 	"citethispage-desc": "Махсус [[Special:Cite|күчермәләү]] битен һәм җиһазларга сылтамалар өсти",
 	"citethispage-link": "Бу битне күчермәләү",
 	"tooltip-citethispage": "Бу битне ничек күчермәләү турындагы мәгълүмат",
-	"citethispage": "Күчермәләү",
-	"citethispage-change-target": "Бит:",
-	"citethispage-change-submit": "Күчермәләү"
+	"citethispage-change-submit": "Күчермәләү",
+	"citethispage-change-target": "Бит:"
 }

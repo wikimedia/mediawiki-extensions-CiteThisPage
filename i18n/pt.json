@@ -8,10 +8,10 @@
 			"Vitorvicentevalente"
 		]
 	},
-	"citethispage-desc": "[[Special:Cite|Página especial]] que produz uma citação de qualquer outra página na wiki (em vários formatos) e adiciona uma ligação na barra de ferramentas",
+	"citethispage": "Citar esta página",
+	"citethispage-desc": "Página especial que produz uma [[Special:CiteThisPage|citação]] e adiciona uma ligação na barra de ferramentas",
 	"citethispage-link": "Citar esta página",
 	"tooltip-citethispage": "Informação sobre como citar esta página",
-	"citethispage": "Citar",
-	"citethispage-change-target": "Página:",
-	"citethispage-change-submit": "Citar"
+	"citethispage-change-submit": "Citar",
+	"citethispage-change-target": "Página:"
 }
