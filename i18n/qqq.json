@@ -10,11 +10,11 @@
 			"Umherirrender"
 		]
 	},
-	"citethispage": "{{doc-special|Cite This Page|unlisted=1}}\n\nThe name of the Special:Cite page to be displayed .\n{{Identical|Cite This Page}}",
+	"citethispage": "{{doc-special|Cite This Page|unlisted=1}}\n\nThe name of the Special:Cite page to be displayed .\n{{Identical|Cite this page}}",
 	"citethispage-desc": "{{desc|name=CiteThisPage|url=http://www.mediawiki.org/wiki/Extension:CiteThisPage}}",
-	"citethispage-link": "The text of link in navigation's toolbox to Special:CiteThisPage.\n\nSee also:\n* {{msg-mw|accesskey-citethispage}}\n* {{msg-mw|tooltip-citethispage}}",
+	"citethispage-link": "The text of link in navigation's toolbox to [[Special:CiteThisPage]].\n\nSee also:\n* {{msg-mw|Accesskey-citethispage}} - empty at this time\n* {{msg-mw|Tooltip-citethispage}}\n{{Identical|Cite this page}}",
 	"accesskey-citethispage": "{{doc-accesskey}} Generally un-used.\nSee also:\n* {{msg-mw|citethispage-link}}\n* {{msg-mw|tooltip-citethispage}}",
-	"tooltip-citethispage": "Used as tooltip for the link {{msg-mw|citethispage-link}}.\n\nSee also:\n* {{msg-mwcitethispage-link}}\n* {{msg-mw|accesskey-citethispage}}",
+	"tooltip-citethispage": "Used as tooltip for the link {{msg-mw|citethispage-link}}.\n\nSee also:\n* {{msg-mw|Citethispage-link}}\n* {{msg-mw|Accesskey-citethispage}} - empty at this time",
 	"citethispage-summary": "{{notranslate}}\n\nA description message shown beneath the title of the Special page to explain what the point of the page is; generally un-used.",
 	"citethispage-change-submit": "A button for users to change the page for which they will see a cite. See also {{msg-mw|citethispage-change-target}}.\n\n{{Identical|Cite}}",
 	"citethispage-change-target": "A prompt for users to change the page for which they wish to see a cite. See also {{msg-mw|citethispage-change-submit}}.\n\n{{Identical|Page}}",

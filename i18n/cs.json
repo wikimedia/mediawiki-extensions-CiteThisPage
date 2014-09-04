@@ -8,7 +8,7 @@
 		]
 	},
 	"citethispage": "Citace",
-	"citethispage-desc": "Přidává speciální stránku [[Special:Cite|Citace]] a odkaz v nabídce nástrojů",
+	"citethispage-desc": "Přidává speciální stránku [[Special:CiteThisPage|Citace]] a odkaz v nabídce nástrojů",
 	"citethispage-link": "Citovat stránku",
 	"tooltip-citethispage": "Informace o tom, jak citovat tuto stránku",
 	"citethispage-change-submit": "Citovat",

@@ -6,12 +6,14 @@
 			"Icvav",
 			"Jatrobat",
 			"Muro de Aguas",
-			"Sanbec"
+			"Sanbec",
+			"Macofe",
+			"Mor"
 		]
 	},
-	"citethispage": "Citar",
-	"citethispage-desc": "Añade una página especial para [[Special:Cite|citar la página]] y un enlace en la caja de herramientas.",
-	"citethispage-link": "Citar este artículo",
+	"citethispage": "Citar esta página",
+	"citethispage-desc": "Añade una página especial para [[Special:Cite|citar la página]] página especial y un enlace en la caja de herramientas.",
+	"citethispage-link": "Citar esta página",
 	"tooltip-citethispage": "Información de como citar esta página",
 	"citethispage-change-submit": "Citar",
 	"citethispage-change-target": "Página:",

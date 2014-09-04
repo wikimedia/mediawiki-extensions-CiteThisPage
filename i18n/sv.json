@@ -4,11 +4,12 @@
 			"Lejonel",
 			"Per",
 			"Sannab",
-			"WikiPhoenix"
+			"WikiPhoenix",
+			"Lokal Profil"
 		]
 	},
 	"citethispage": "Citera",
-	"citethispage-desc": "Lägger till en specialsida för [[Special:Cite|källhänvisning]] och en länk i verktygslådan",
+	"citethispage-desc": "Lägger till en specialsida för [[Special:CiteThisPage|källhänvisning]] och en länk i verktygslådan",
 	"citethispage-link": "Citera denna artikel",
 	"tooltip-citethispage": "Information om hur denna sida kan citeras",
 	"citethispage-change-submit": "Citera",

@@ -7,7 +7,7 @@
 		]
 	},
 	"citethispage": "Citazione",
-	"citethispage-desc": "Aggiunge una pagina speciale per le [[Special:Cite|citazioni]] e un collegamento negli strumenti",
+	"citethispage-desc": "Aggiunge una pagina speciale per le [[Special:CiteThisPage|citazioni]] e un collegamento negli strumenti",
 	"citethispage-link": "Cita questa pagina",
 	"tooltip-citethispage": "Informazioni su come citare questa pagina",
 	"citethispage-change-submit": "Crea la citazione",
