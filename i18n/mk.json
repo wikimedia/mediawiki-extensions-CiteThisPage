@@ -7,7 +7,7 @@
 		]
 	},
 	"citethispage": "Цитат",
-	"citethispage-desc": "Додава специјална страница за [[Special:Cite|наведување]] и врска кон алатникот",
+	"citethispage-desc": "Додава специјална страница за [[Special:CiteThisPage|наведување]] и врска кон алатникот",
 	"citethispage-link": "Наведи ја страницава",
 	"tooltip-citethispage": "Информации како да ја цитирате оваа страница",
 	"citethispage-change-submit": "Наведи",

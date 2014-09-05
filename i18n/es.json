@@ -12,7 +12,7 @@
 		]
 	},
 	"citethispage": "Citar esta página",
-	"citethispage-desc": "Añade una página especial para [[Special:Cite|citar la página]] página especial y un enlace en la caja de herramientas.",
+	"citethispage-desc": "Añade una página especial para [[Special:CiteThisPage|citar una página]] y un enlace en la caja de herramientas.",
 	"citethispage-link": "Citar esta página",
 	"tooltip-citethispage": "Información de como citar esta página",
 	"citethispage-change-submit": "Citar",

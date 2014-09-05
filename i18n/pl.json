@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Sp5uhe"
+			"Sp5uhe",
+			"Chrumps"
 		]
 	},
 	"citethispage": "Bibliografia",
-	"citethispage-desc": "Dodaje stronę specjalną i guzik w toolbarze edycyjnym do obsługi [[Special:Cite|cytowania]]",
+	"citethispage-desc": "Dodaje stronę specjalną [[Special:CiteThisPage|obsługi cytowań]] i link w pasku narzędziowym",
 	"citethispage-link": "Cytowanie tego artykułu",
 	"tooltip-citethispage": "Informacja o tym jak należy cytować tę stronę",
 	"citethispage-change-submit": "stwórz wpis bibliograficzny",
