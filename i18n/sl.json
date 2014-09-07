@@ -6,7 +6,7 @@
 		]
 	},
 	"citethispage": "Navedi",
-	"citethispage-desc": "Doda [[Special:Cite|posebno stran za navedbo vira]] in povezavo v orodno vrstico",
+	"citethispage-desc": "Doda posebno stran za [[Special:CiteThisPage|navedbo vira]] in povezavo v orodno vrstico",
 	"citethispage-link": "Navedba strani",
 	"tooltip-citethispage": "Informacije o tem, kako navajati to stran",
 	"citethispage-change-submit": "Navedi",

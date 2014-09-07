@@ -3,10 +3,11 @@
 		"authors": [
 			"Effeietsanders",
 			"SPQRobin",
-			"Siebrand"
+			"Siebrand",
+			"Romaine"
 		]
 	},
-	"citethispage": "Citeren",
+	"citethispage": "Deze pagina citeren",
 	"citethispage-desc": "Voegt een [[Special:Cite|speciale pagina]] toe om te citeren, en een koppeling ernaar in de hulpmiddelen",
 	"citethispage-link": "Deze pagina citeren",
 	"tooltip-citethispage": "Informatie over hoe u deze pagina kunt citeren",
