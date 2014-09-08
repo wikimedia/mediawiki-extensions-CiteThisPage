@@ -5,8 +5,8 @@
 			"Xosé"
 		]
 	},
-	"citethispage": "Citar",
-	"citethispage-desc": "Engade unha páxina especial de [[Special:Cite|citas]] e unha ligazón na caixa de ferramentas",
+	"citethispage": "Citar esta páxina",
+	"citethispage-desc": "Engade unha páxina especial de [[Special:CiteThisPage|citas]] e unha ligazón na caixa de ferramentas",
 	"citethispage-link": "Citar esta páxina",
 	"tooltip-citethispage": "Información sobre como citar esta páxina",
 	"citethispage-change-submit": "Citar",
