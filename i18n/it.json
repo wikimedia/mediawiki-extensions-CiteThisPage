@@ -3,10 +3,11 @@
 		"authors": [
 			"Beta16",
 			"BrokenArrow",
-			"Ximo17"
+			"Ximo17",
+			"FRacco"
 		]
 	},
-	"citethispage": "Citazione",
+	"citethispage": "Cita questa pagina",
 	"citethispage-desc": "Aggiunge una pagina speciale per le [[Special:CiteThisPage|citazioni]] e un collegamento negli strumenti",
 	"citethispage-link": "Cita questa pagina",
 	"tooltip-citethispage": "Informazioni su come citare questa pagina",
