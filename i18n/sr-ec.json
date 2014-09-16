@@ -10,7 +10,7 @@
 		]
 	},
 	"citethispage": "Цитирање",
-	"citethispage-desc": "Додаје посебну страницу за [[Special:Cite|цитирање]] и везу с алаткама",
+	"citethispage-desc": "Додаје посебну страницу за [[Special:CiteThisPage|цитирање]] и везу с алаткама",
 	"citethispage-link": "Цитирај ову страницу",
 	"tooltip-citethispage": "Информације о томе како цитирати ову страну",
 	"citethispage-change-submit": "Цитирај",
