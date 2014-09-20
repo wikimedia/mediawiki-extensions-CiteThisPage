@@ -3,11 +3,12 @@
 		"authors": [
 			"Frankou",
 			"Waihorace",
-			"Liuxinyu970226"
+			"Liuxinyu970226",
+			"Cwlin0416"
 		]
 	},
 	"citethispage": "引用文章",
-	"citethispage-desc": "增加[[Special:Cite|引用]]特殊頁面以及工具箱連結",
+	"citethispage-desc": "加入 [[Special:CiteThisPage|引用]] 特殊頁面及工具箱連結",
 	"citethispage-link": "引用此文",
 	"tooltip-citethispage": "關於如何引用此頁的資訊",
 	"citethispage-change-submit": "引用",
