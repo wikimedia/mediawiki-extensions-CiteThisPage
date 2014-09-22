@@ -122,7 +122,7 @@ class CiteThisPageOutput {
 			}
 		}
 		$ret = $wgParser->parse( $msg, $this->mTitle, $this->mParserOptions, false, true, $this->getRevId() );
-		$wgOut->addModules( 'ext.specialCiteThisPage' );
+		$wgOut->addModuleStyles( 'ext.citeThisPage' );
 
 		# Introduced in 1.24
 		if( method_exists( $wgOut, 'addParserOutputContent' ) ) {
