@@ -19,8 +19,7 @@ class SpecialCiteThisPage extends SpecialPage {
 		$page = $par !== null ? $par : $this->getRequest()->getText( 'page' );
 		$title = Title::newFromText( $page );
 
-		$cform = new CiteThisPageForm( $title );
-		$cform->execute();
+		$this->showForm( $title );
 
 		if ( $title && $title->exists() ) {
 			$id = $this->getRequest()->getInt( 'id' );
@@ -28,51 +27,39 @@ class SpecialCiteThisPage extends SpecialPage {
 			$cout->execute();
 		}
 	}
-}
 
-class CiteThisPageForm {
-	/**
-	 * @var Title
-	 */
-	public $mTitle;
-
-	function __construct( &$title ) {
-		$this->mTitle =& $title;
-	}
-
-	function execute() {
-		global $wgOut, $wgScript;
-
-		$wgOut->addHTML(
+	private function showForm( Title $title = null ) {
+		$this->getOutput()->addHTML(
 			Xml::openElement( 'form',
 				array(
 					'id' => 'specialCiteThisPage',
 					'method' => 'get',
-					'action' => $wgScript
+					'action' => wfScript(),
 				) ) .
-				Html::hidden( 'title', SpecialPage::getTitleFor( 'CiteThisPage' )->getPrefixedDBkey() ) .
-				Xml::openElement( 'label' ) .
-					wfMessage( 'citethispage-change-target' )->escaped() . ' ' .
-					Xml::element( 'input',
-						array(
-							'type' => 'text',
-							'size' => 30,
-							'name' => 'page',
-							'value' => is_object( $this->mTitle ) ? $this->mTitle->getPrefixedText() : ''
-						),
-						''
-					) .
-					' ' .
-					Xml::element( 'input',
-						array(
-							'type' => 'submit',
-							'value' => wfMessage( 'citethispage-change-submit' )->escaped()
-						),
-						''
-					) .
-				Xml::closeElement( 'label' ) .
+			Html::hidden( 'title', SpecialPage::getTitleFor( 'CiteThisPage' )->getPrefixedDBkey() ) .
+			Xml::openElement( 'label' ) .
+			$this->msg( 'citethispage-change-target' )->escaped() . ' ' .
+			Xml::element( 'input',
+				array(
+					'type' => 'text',
+					'size' => 30,
+					'name' => 'page',
+					'value' => $title ? $title->getPrefixedText() : ''
+				),
+				''
+			) .
+			' ' .
+			Xml::element( 'input',
+				array(
+					'type' => 'submit',
+					'value' => $this->msg( 'citethispage-change-submit' )->escaped()
+				),
+				''
+			) .
+			Xml::closeElement( 'label' ) .
 			Xml::closeElement( 'form' )
 		);
+
 	}
 }
 
