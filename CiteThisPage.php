@@ -22,9 +22,8 @@ $wgExtensionCredits['specialpage'][] = array(
 	'url' => 'https://www.mediawiki.org/wiki/Extension:CiteThisPage'
 );
 
-# Internationalisation file
+# Internationalisation files
 $wgMessagesDirs['CiteThisPage'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['CiteThisPage'] = __DIR__ . '/CiteThisPage.i18n.php';
 $wgExtensionMessagesFiles['CiteThisPageAliases'] = __DIR__ . '/CiteThisPage.alias.php';
 
 $wgHooks['SkinTemplateBuildNavUrlsNav_urlsAfterPermalink'][] = 'efCiteThisPageNav';
@@ -52,7 +51,7 @@ $wgResourceModules['ext.citeThisPage'] = $citeThisPageResourceTemplate + array(
  */
 function efCiteThisPageNav( &$skintemplate, &$nav_urls, &$oldid, &$revid ) {
 	// check whether we’re in the right namespace, the $revid has the correct type and is not empty
-	// (what would mean that the current page doesn’t exist)
+	// (which would mean that the current page doesn’t exist)
 	$title = $skintemplate->getTitle();
 	if ( $title->isContentPage() && $revid !== 0 && !empty( $revid ) )
 		$nav_urls['citeThisPage'] = array(
