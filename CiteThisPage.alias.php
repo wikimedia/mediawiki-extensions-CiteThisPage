@@ -164,7 +164,7 @@ $specialPageAliases['hsb'] = array(
 	'CiteThisPage' => array( 'Citowanska_pomoc' ),
 );
 
-/** 湘语 (湘语) */
+/** Xiang Chinese (湘语) */
 $specialPageAliases['hsn'] = array(
 	'CiteThisPage' => array( '建脚注' ),
 );
@@ -264,7 +264,7 @@ $specialPageAliases['mt'] = array(
 	'CiteThisPage' => array( 'Iċċita' ),
 );
 
-/** Nahuatl (Nāhuatl) */
+/** Nāhuatl (Nāhuatl) */
 $specialPageAliases['nah'] = array(
 	'CiteThisPage' => array( 'Tlahtoa', 'Citar' ),
 );
@@ -394,7 +394,7 @@ $specialPageAliases['ur'] = array(
 	'CiteThisPage' => array( 'حوالہ' ),
 );
 
-/** vèneto (vèneto) */
+/** Venetian (vèneto) */
 $specialPageAliases['vec'] = array(
 	'CiteThisPage' => array( 'Cita' ),
 );
