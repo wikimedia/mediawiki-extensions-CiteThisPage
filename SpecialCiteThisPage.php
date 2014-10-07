@@ -1,11 +1,11 @@
 <?php
 
 class SpecialCiteThisPage extends SpecialPage {
-	function __construct() {
+	public function __construct() {
 		parent::__construct( 'CiteThisPage' );
 	}
 
-	function execute( $par ) {
+	public function execute( $par ) {
 		global $wgUseTidy;
 
 		// Having tidy on causes whitespace and <pre> tags to
@@ -59,7 +59,6 @@ class SpecialCiteThisPage extends SpecialPage {
 			Xml::closeElement( 'label' ) .
 			Xml::closeElement( 'form' )
 		);
-
 	}
 }
 
