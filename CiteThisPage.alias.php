@@ -211,7 +211,7 @@ $specialPageAliases['ja'] = array(
 
 /** Korean (한국어) */
 $specialPageAliases['ko'] = array(
-	'CiteThisPage' => array( '인용' ),
+	'CiteThisPage' => array( '이문서인용', '인용' ),
 );
 
 /** Colognian (Ripoarisch) */
