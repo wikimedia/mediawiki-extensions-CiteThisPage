@@ -416,7 +416,7 @@ $specialPageAliases['yue'] = array(
 
 /** Simplified Chinese (中文（简体）‎) */
 $specialPageAliases['zh-hans'] = array(
-	'CiteThisPage' => array( '引用' ),
+	'CiteThisPage' => array( '引用此页面', '引用' ),
 );
 
 /** Traditional Chinese (中文（繁體）‎) */
