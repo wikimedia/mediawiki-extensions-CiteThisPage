@@ -401,7 +401,7 @@ $specialPageAliases['vec'] = array(
 
 /** Vietnamese (Tiếng Việt) */
 $specialPageAliases['vi'] = array(
-	'CiteThisPage' => array( 'Ghi_chú' ),
+	'CiteThisPage' => array( 'Trích_dẫn' ),
 );
 
 /** Yiddish (ייִדיש) */
