@@ -30,6 +30,7 @@ $wgHooks['SkinTemplateBuildNavUrlsNav_urlsAfterPermalink'][] = 'efCiteThisPageNa
 $wgHooks['SkinTemplateToolboxEnd'][] = 'efSpecialCiteThisPageToolbox';
 
 $wgSpecialPages['CiteThisPage'] = 'SpecialCiteThisPage';
+$wgSpecialPageGroups['CiteThisPage'] = 'pagetools';
 $wgAutoloadClasses['SpecialCiteThisPage'] = __DIR__ . '/SpecialCiteThisPage.php';
 
 // Resources
