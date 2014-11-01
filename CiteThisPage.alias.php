@@ -101,7 +101,7 @@ $specialPageAliases['dsb'] = array(
 
 /** Greek (Ελληνικά) */
 $specialPageAliases['el'] = array(
-	'CiteThisPage' => array( 'Παραπομπή' ),
+	'CiteThisPage' => array( 'ΠαραπομπήΑυτήΤηΣελίδα', 'Παραπομπή' ),
 );
 
 /** Esperanto (Esperanto) */
@@ -206,7 +206,7 @@ $specialPageAliases['it'] = array(
 
 /** Japanese (日本語) */
 $specialPageAliases['ja'] = array(
-	'CiteThisPage' => array( '引用' ),
+	'CiteThisPage' => array( 'このページを引用', '引用' ),
 );
 
 /** Korean (한국어) */
