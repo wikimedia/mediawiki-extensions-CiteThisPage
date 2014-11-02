@@ -2,11 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Carla404",
-			"Giro720"
+			"Giro720",
+			"Paladox"
 		]
 	},
 	"citethispage": "Citar",
-	"citethispage-desc": "Adiciona uma página especial de [[Special:Cite|citação]] e link para a caixa de ferramentas",
+	"citethispage-desc": "Adiciona uma página especial de [[Special:CiteThisPage|citação]] e link para a caixa de ferramentas",
 	"citethispage-link": "Citar esta página",
 	"tooltip-citethispage": "Informação sobre como citar esta página",
 	"citethispage-change-submit": "Citar",
