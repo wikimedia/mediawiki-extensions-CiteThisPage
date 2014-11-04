@@ -4,11 +4,12 @@
 			"Michawiki",
 			"Tlustulimu",
 			"Yekrats",
-			"Paladox"
+			"Paladox",
+			"Nemo bis"
 		]
 	},
 	"citethispage": "Citado",
-	"citethispage-desc": "Aldonas specialan paĝon por [[Special:CiteThisPage|citado]] kaj ligilo al ilaro",
+	"citethispage-desc": "Aldonas specialan paĝon por [[Special:Cite|citado]] kaj ligilo al ilaro",
 	"citethispage-link": "Citi ĉi tiun paĝon",
 	"tooltip-citethispage": "Informoj pri tio, kiel oni citu ĉi tiun paĝon",
 	"citethispage-change-submit": "Citi",
