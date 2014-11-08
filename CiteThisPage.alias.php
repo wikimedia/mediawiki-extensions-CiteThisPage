@@ -151,7 +151,7 @@ $specialPageAliases['gsw'] = array(
 
 /** Hebrew (עברית) */
 $specialPageAliases['he'] = array(
-	'CiteThisPage' => array( 'ציטוט' ),
+	'CiteThisPage' => array( 'ציטוט_דף_זה', 'ציטוט' ),
 );
 
 /** Croatian (hrvatski) */
