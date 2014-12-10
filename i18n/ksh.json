@@ -5,7 +5,7 @@
 		]
 	},
 	"citethispage": "Zittiere",
-	"citethispage-desc": "Brenk de Sondersigg „[[Special:Cite|Ziteere]]“ un ene Link onger „{{int:toolbox}}“.",
+	"citethispage-desc": "Brenk de {{int:specialpage}} „[[Special:Special:CiteThisPage|Ziteere]]“ un ene Link onger „{{int:toolbox}}“.",
 	"citethispage-link": "Di Sigk Zitteere",
 	"tooltip-citethispage": "Enfommazjuhne doh drövver, wi mer heh di Sigg zitteere sullt.",
 	"citethispage-change-submit": "Zittėere",
