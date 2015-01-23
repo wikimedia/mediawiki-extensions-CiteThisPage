@@ -29,6 +29,11 @@ $specialPageAliases['as'] = array(
 	'CiteThisPage' => array( 'উদ্ধৃতি' ),
 );
 
+/** Avaric (авар) */
+$specialPageAliases['av'] = array(
+	'CiteThisPage' => array( 'Цитата' ),
+);
+
 /** Bikol Central (Bikol Central) */
 $specialPageAliases['bcl'] = array(
 	'CiteThisPage' => array( 'Sambitón' ),
@@ -256,7 +261,7 @@ $specialPageAliases['mr'] = array(
 
 /** Malay (Bahasa Melayu) */
 $specialPageAliases['ms'] = array(
-	'CiteThisPage' => array( 'Petik' ),
+	'CiteThisPage' => array( 'Petik_laman_ini', 'Petik' ),
 );
 
 /** Maltese (Malti) */
