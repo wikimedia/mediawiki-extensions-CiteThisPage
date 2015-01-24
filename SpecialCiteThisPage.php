@@ -135,7 +135,7 @@ class CiteThisPageOutput {
 	function genParserOptions() {
 		global $wgUser;
 		$this->mParserOptions = ParserOptions::newFromUser( $wgUser );
-		$this->mParserOptions->setDateFormat( MW_DATE_DEFAULT );
+		$this->mParserOptions->setDateFormat( 'default' );
 		$this->mParserOptions->setEditSection( false );
 	}
 
