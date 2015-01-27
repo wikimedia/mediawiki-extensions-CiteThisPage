@@ -26,12 +26,13 @@ $wgExtensionCredits['specialpage'][] = array(
 $wgMessagesDirs['CiteThisPage'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['CiteThisPageAliases'] = __DIR__ . '/CiteThisPage.alias.php';
 
-$wgHooks['SkinTemplateBuildNavUrlsNav_urlsAfterPermalink'][] = 'efCiteThisPageNav';
-$wgHooks['SkinTemplateToolboxEnd'][] = 'efSpecialCiteThisPageToolbox';
+$wgHooks['SkinTemplateBuildNavUrlsNav_urlsAfterPermalink'][] = 'CiteThisPageHooks::onSkinTemplateBuildNavUrlsNav_urlsAfterPermalink';
+$wgHooks['SkinTemplateToolboxEnd'][] = 'CiteThisPageHooks::onSkinTemplateToolboxEnd';
 
 $wgSpecialPages['CiteThisPage'] = 'SpecialCiteThisPage';
 $wgSpecialPageGroups['CiteThisPage'] = 'pagetools';
 $wgAutoloadClasses['SpecialCiteThisPage'] = __DIR__ . '/SpecialCiteThisPage.php';
+$wgAutoloadClasses['CiteThisPageHooks'] = __DIR__ . '/CiteThisPage.hooks.php';
 
 // Resources
 $citeThisPageResourceTemplate = array(
@@ -42,47 +43,3 @@ $citeThisPageResourceTemplate = array(
 $wgResourceModules['ext.citeThisPage'] = $citeThisPageResourceTemplate + array(
 	'styles' => 'ext.citeThisPage.css',
 );
-
-/**
- * @param $skintemplate SkinTemplate
- * @param $nav_urls
- * @param $oldid
- * @param $revid
- * @return bool
- */
-function efCiteThisPageNav( &$skintemplate, &$nav_urls, &$oldid, &$revid ) {
-	// check whether we’re in the right namespace, the $revid has the correct type and is not empty
-	// (which would mean that the current page doesn’t exist)
-	$title = $skintemplate->getTitle();
-	if ( $title->isContentPage() && $revid !== 0 && !empty( $revid ) )
-		$nav_urls['citeThisPage'] = array(
-			'args' => array( 'page' => $title->getPrefixedDBkey(), 'id' => $revid )
-		);
-
-	return true;
-}
-
-/**
- * Add the cite link to the toolbar
- *
- * @param $skin Skin
- *
- * @return bool
- */
-function efSpecialCiteThisPageToolbox( &$skin ) {
-	if ( isset( $skin->data['nav_urls']['citeThisPage'] ) ) {
-		echo Html::rawElement(
-			'li',
-			array( 'id' => 't-cite' ),
-			Linker::link(
-				SpecialPage::getTitleFor( 'CiteThisPage' ),
-				wfMessage( 'citethispage-link' )->escaped(),
-				# Used message keys: 'tooltip-citethispage', 'accesskey-citethispage'
-				Linker::tooltipAndAccessKeyAttribs( 'citethispage' ),
-				$skin->data['nav_urls']['citeThisPage']['args']
-			)
-		);
-	}
-
-	return true;
-}
