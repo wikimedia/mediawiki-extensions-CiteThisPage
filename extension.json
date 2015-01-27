@@ -1,0 +1,43 @@
+{
+	"name": "CiteThisPage",
+	"author": [
+		"Ævar Arnfjörð Bjarmason",
+		"James D. Forrester"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:CiteThisPage",
+	"descriptionmsg": "citethispage-desc",
+	"type": "specialpage",
+	"ExtensionMessagesFiles": {
+		"CiteThisPageAliases": "CiteThisPage.alias.php"
+	},
+	"Hooks": {
+		"SkinTemplateBuildNavUrlsNav_urlsAfterPermalink": [
+			"CiteThisPageHooks::onSkinTemplateBuildNavUrlsNav_urlsAfterPermalink"
+		],
+		"SkinTemplateToolboxEnd": [
+			"CiteThisPageHooks::onSkinTemplateToolboxEnd"
+		]
+	},
+	"MessagesDirs": {
+		"CiteThisPage": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"ext.citeThisPage": {
+			"localBasePath": "modules",
+			"remoteExtPath": "CiteThisPage/modules",
+			"styles": "ext.citeThisPage.css"
+		}
+	},
+	"SpecialPageGroups": {
+		"CiteThisPage": "pagetools"
+	},
+	"SpecialPages": {
+		"CiteThisPage": "SpecialCiteThisPage"
+	},
+	"AutoloadClasses": {
+		"SpecialCiteThisPage": "SpecialCiteThisPage.php",
+		"CiteThisPageHooks": "CiteThisPage.hooks.php"
+	}
+}
