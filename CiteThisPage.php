@@ -19,7 +19,8 @@ $wgExtensionCredits['specialpage'][] = array(
 	'name' => 'CiteThisPage',
 	'author' => array( 'Ævar Arnfjörð Bjarmason', 'James D. Forrester' ),
 	'descriptionmsg' => 'citethispage-desc',
-	'url' => 'https://www.mediawiki.org/wiki/Extension:CiteThisPage'
+	'url' => 'https://www.mediawiki.org/wiki/Extension:CiteThisPage',
+	'license-name' => 'GPL-2.0+'
 );
 
 # Internationalisation files
