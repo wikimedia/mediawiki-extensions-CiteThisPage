@@ -33,6 +33,7 @@ $wgHooks['SkinTemplateToolboxEnd'][] = 'CiteThisPageHooks::onSkinTemplateToolbox
 $wgSpecialPages['CiteThisPage'] = 'SpecialCiteThisPage';
 $wgSpecialPageGroups['CiteThisPage'] = 'pagetools';
 $wgAutoloadClasses['SpecialCiteThisPage'] = __DIR__ . '/SpecialCiteThisPage.php';
+$wgAutoloadClasses['CiteThisPageOutput'] = __DIR__ . '/SpecialCiteThisPage.php';
 $wgAutoloadClasses['CiteThisPageHooks'] = __DIR__ . '/CiteThisPage.hooks.php';
 
 // Resources
