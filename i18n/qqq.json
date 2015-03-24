@@ -11,7 +11,7 @@
 		]
 	},
 	"citethispage": "{{doc-special|Cite This Page|unlisted=1}}\n\nThe name of the Special:Cite page to be displayed .\n{{Identical|Cite this page}}",
-	"citethispage-desc": "{{desc|name=CiteThisPage|url=http://www.mediawiki.org/wiki/Extension:CiteThisPage}}",
+	"citethispage-desc": "{{desc|name=CiteThisPage|url=https://www.mediawiki.org/wiki/Extension:CiteThisPage}}",
 	"citethispage-link": "The text of link in navigation's toolbox to [[Special:CiteThisPage]].\n\nSee also:\n* {{msg-mw|Accesskey-citethispage}} - empty at this time\n* {{msg-mw|Tooltip-citethispage}}\n{{Identical|Cite this page}}",
 	"accesskey-citethispage": "{{doc-accesskey}} Generally un-used.\nSee also:\n* {{msg-mw|citethispage-link}}\n* {{msg-mw|tooltip-citethispage}}",
 	"tooltip-citethispage": "Used as tooltip for the link {{msg-mw|citethispage-link}}.\n\nSee also:\n* {{msg-mw|Citethispage-link}}\n* {{msg-mw|Accesskey-citethispage}} - empty at this time",
