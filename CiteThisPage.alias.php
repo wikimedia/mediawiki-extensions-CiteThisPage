@@ -394,6 +394,11 @@ $specialPageAliases['tr'] = array(
 	'CiteThisPage' => array( 'KaynakGöster' ),
 );
 
+/** Ukrainian (українська) */
+$specialPageAliases['uk'] = array(
+	'CiteThisPage' => array( 'Цитата' ),
+);
+
 /** Urdu (اردو) */
 $specialPageAliases['ur'] = array(
 	'CiteThisPage' => array( 'حوالہ' ),
