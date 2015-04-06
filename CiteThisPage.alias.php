@@ -44,6 +44,11 @@ $specialPageAliases['bg'] = array(
 	'CiteThisPage' => array( 'Цитиране' ),
 );
 
+/** Western Balochi (بلوچی رخشانی) */
+$specialPageAliases['bgn'] = array(
+	'CiteThisPage' => array( 'یات_کورت' ),
+);
+
 /** Banjar (Bahasa Banjar) */
 $specialPageAliases['bjn'] = array(
 	'CiteThisPage' => array( 'Juhut' ),
