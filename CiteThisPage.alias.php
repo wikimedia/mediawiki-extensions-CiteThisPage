@@ -149,6 +149,11 @@ $specialPageAliases['frp'] = array(
 	'CiteThisPage' => array( 'Citar' ),
 );
 
+/** Western Frisian (Frysk) */
+$specialPageAliases['fy'] = array(
+	'CiteThisPage' => array( 'Sitearje' ),
+);
+
 /** Galician (galego) */
 $specialPageAliases['gl'] = array(
 	'CiteThisPage' => array( 'Cita', 'Citar' ),
