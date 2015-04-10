@@ -249,6 +249,11 @@ $specialPageAliases['lb'] = array(
 	'CiteThisPage' => array( 'Zitéierhellëf' ),
 );
 
+/** لوری (لوری) */
+$specialPageAliases['lrc'] = array(
+	'CiteThisPage' => array( 'تیار_کردن_ای_بلگه،_تیارگه' ),
+);
+
 /** Literary Chinese (文言) */
 $specialPageAliases['lzh'] = array(
 	'CiteThisPage' => array( '引文' ),
