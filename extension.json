@@ -11,6 +11,11 @@
 	"ExtensionMessagesFiles": {
 		"CiteThisPageAliases": "CiteThisPage.alias.php"
 	},
+	"MessagesDirs": {
+		"CiteThisPage": [
+			"i18n"
+		]
+	},
 	"Hooks": {
 		"SkinTemplateBuildNavUrlsNav_urlsAfterPermalink": [
 			"CiteThisPageHooks::onSkinTemplateBuildNavUrlsNav_urlsAfterPermalink"
@@ -19,17 +24,14 @@
 			"CiteThisPageHooks::onSkinTemplateToolboxEnd"
 		]
 	},
-	"MessagesDirs": {
-		"CiteThisPage": [
-			"i18n"
-		]
-	},
 	"ResourceModules": {
 		"ext.citeThisPage": {
-			"localBasePath": "modules",
-			"remoteExtPath": "CiteThisPage/modules",
 			"styles": "ext.citeThisPage.css"
 		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "modules",
+		"remoteExtPath": "CiteThisPage/modules"
 	},
 	"SpecialPageGroups": {
 		"CiteThisPage": "pagetools"
@@ -39,7 +41,7 @@
 	},
 	"AutoloadClasses": {
 		"SpecialCiteThisPage": "SpecialCiteThisPage.php",
-		"CiteThisPageHooks": "CiteThisPage.hooks.php",
-		"CiteThisPageOutput": "SpecialCiteThisPage.php"
+		"CiteThisPageOutput": "SpecialCiteThisPage.php",
+		"CiteThisPageHooks": "CiteThisPage.hooks.php"
 	}
 }
