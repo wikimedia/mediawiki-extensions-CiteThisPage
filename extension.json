@@ -39,6 +39,7 @@
 	},
 	"AutoloadClasses": {
 		"SpecialCiteThisPage": "SpecialCiteThisPage.php",
-		"CiteThisPageHooks": "CiteThisPage.hooks.php"
+		"CiteThisPageHooks": "CiteThisPage.hooks.php",
+		"CiteThisPageOutput": "SpecialCiteThisPage.php"
 	}
 }
