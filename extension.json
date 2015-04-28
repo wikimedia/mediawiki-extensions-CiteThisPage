@@ -26,6 +26,7 @@
 	},
 	"ResourceModules": {
 		"ext.citeThisPage": {
+			"position": "top",
 			"styles": "ext.citeThisPage.css"
 		}
 	},
