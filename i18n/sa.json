@@ -2,11 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Ansumang",
-			"Shubha"
+			"Shubha",
+			"NehalDaveND"
 		]
 	},
 	"citethispage": "उदाहरति",
-	"citethispage-desc": "[[Special:Cite|बाह्याधारैः]] युक्तं किञ्चन विशेषपृष्ठम् उपकरणपेटिकानुबन्धं च योजयति",
+	"citethispage-desc": "[[Special:Cite|बाह्याधारैः]] युक्तं किञ्चन विशिष्टपृष्ठम् उपकरणपेटिकानुबन्धं च योजयति",
 	"citethispage-link": "अस्य पृष्ठस्य उल्लेखः क्रियताम्",
 	"tooltip-citethispage": "अस्य पृष्ठस्य उल्लेखः कथमिति विवरणम्",
 	"citethispage-change-submit": "उदाहरति",
