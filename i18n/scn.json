@@ -2,11 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Santu",
-			"Gmelfi"
+			"Gmelfi",
+			"Pippinu"
 		]
 	},
 	"citethispage": "Muntuazzioni",
-	"citethispage-desc": "Junci na pàggina spiciali pi li [[Special:Cite|cosi di muntuari]] e nu lijami ntê strumenti",
+	"citethispage-desc": "Agghiunci na pàggina spiciali pî [[Special:CiteThisPage|citazzioni]] e nu lijami ntâ sbarra dî strumenti",
 	"citethispage-link": "Muntùa sta pàggina",
 	"tooltip-citethispage": "Nfurmazzioni su comu citari sta pàggina",
 	"citethispage-change-submit": "Cria la cosa di muntuari",

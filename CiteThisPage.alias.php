@@ -19,7 +19,7 @@ $specialPageAliases['ar'] = array(
 	'CiteThisPage' => array( 'استشهاد' ),
 );
 
-/** Egyptian Spoken Arabic (مصرى) */
+/** Egyptian Arabic (مصرى) */
 $specialPageAliases['arz'] = array(
 	'CiteThisPage' => array( 'استشهاد' ),
 );
@@ -144,7 +144,7 @@ $specialPageAliases['fr'] = array(
 	'CiteThisPage' => array( 'Citer' ),
 );
 
-/** Franco-Provençal (arpetan) */
+/** Arpitan (arpetan) */
 $specialPageAliases['frp'] = array(
 	'CiteThisPage' => array( 'Citar' ),
 );
@@ -249,7 +249,7 @@ $specialPageAliases['lb'] = array(
 	'CiteThisPage' => array( 'Zitéierhellëf' ),
 );
 
-/** لوری (لوری) */
+/** لوری مینجایی (لوری مینجایی) */
 $specialPageAliases['lrc'] = array(
 	'CiteThisPage' => array( 'تیار_کردن_ای_بلگه،_تیارگه' ),
 );
