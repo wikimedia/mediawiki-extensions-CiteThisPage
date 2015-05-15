@@ -33,9 +33,6 @@
 		"localBasePath": "modules",
 		"remoteExtPath": "CiteThisPage/modules"
 	},
-	"SpecialPageGroups": {
-		"CiteThisPage": "pagetools"
-	},
 	"SpecialPages": {
 		"CiteThisPage": "SpecialCiteThisPage"
 	},

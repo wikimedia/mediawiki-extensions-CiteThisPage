@@ -60,6 +60,10 @@ class SpecialCiteThisPage extends SpecialPage {
 			Xml::closeElement( 'form' )
 		);
 	}
+
+	protected function getGroupName() {
+		return 'pagetools';
+	}
 }
 
 class CiteThisPageOutput {
