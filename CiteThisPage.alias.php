@@ -249,7 +249,7 @@ $specialPageAliases['lb'] = array(
 	'CiteThisPage' => array( 'Zitéierhellëf' ),
 );
 
-/** لوری مینجایی (لوری مینجایی) */
+/** Northern Luri (لوری مینجایی) */
 $specialPageAliases['lrc'] = array(
 	'CiteThisPage' => array( 'تیار_کردن_ای_بلگه،_تیارگه' ),
 );
