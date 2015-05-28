@@ -1,4 +1,9 @@
 {
-	"@metadata": [],
-	"citethispage": "حواليو"
+	"@metadata": {
+		"authors": [
+			"Sindhu"
+		]
+	},
+	"citethispage": "حواليو",
+	"tooltip-citethispage": "هن صفحي جو حوالو ڪيئن ڏجي بابت معلومات"
 }
