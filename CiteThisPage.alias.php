@@ -251,7 +251,7 @@ $specialPageAliases['lb'] = array(
 
 /** Northern Luri (لوری مینجایی) */
 $specialPageAliases['lrc'] = array(
-	'CiteThisPage' => array( 'تیار_کردن_ای_بلگه،_تیارگه' ),
+	'CiteThisPage' => array( 'تیار_کئردئن_ئی_بألگە', 'تیارگە' ),
 );
 
 /** Literary Chinese (文言) */
