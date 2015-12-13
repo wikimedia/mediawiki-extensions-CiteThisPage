@@ -4,6 +4,9 @@
 			"Hosseinblue"
 		]
 	},
-	"citethispage-link": "ویرکردن پیوۀند ئئ مرياۀقالۀ",
-	"tooltip-citethispage": "اطلاعات دۀربارۀ چگونگی ویرکردن ئئ وۀلگۀ"
+	"citethispage": "ویرکردن پیوۀند ئئ مةقالة",
+	"citethispage-link": "ویرکردن پیوۀند ئئ مةقالة",
+	"tooltip-citethispage": "اطلاعات دۀربارۀ چگونگی ویرکردن ئئ وۀلگۀ",
+	"citethispage-change-submit": "یادکرد/ویرکرد",
+	"citethispage-change-target": ":وةڵگة"
 }
