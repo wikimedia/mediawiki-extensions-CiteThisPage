@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Hosseinblue"
+			"Hosseinblue",
+			"Lakzon"
 		]
 	},
-	"citethispage": "ویرکردن پیوۀند ئئ مةقالة",
+	"citethispage": "ویرکرن(یادکرد)بنچەک ئێ مەقاڵە",
 	"citethispage-link": "ویرکردن پیوۀند ئئ مةقالة",
 	"tooltip-citethispage": "اطلاعات دۀربارۀ چگونگی ویرکردن ئئ وۀلگۀ",
 	"citethispage-change-submit": "یادکرد/ویرکرد",
