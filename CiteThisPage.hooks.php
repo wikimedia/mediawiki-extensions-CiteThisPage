@@ -16,9 +16,9 @@ class CiteThisPageHooks {
 		// (which would mean that the current page doesn’t exist)
 		$title = $skintemplate->getTitle();
 		if ( $title->isContentPage() && $revid !== 0 && !empty( $revid ) ) {
-			$nav_urls['citeThisPage'] = array(
-				'args' => array( 'page' => $title->getPrefixedDBkey(), 'id' => $revid )
-			);
+			$nav_urls['citeThisPage'] = [
+				'args' => [ 'page' => $title->getPrefixedDBkey(), 'id' => $revid ]
+			];
 		}
 
 		return true;
@@ -32,7 +32,7 @@ class CiteThisPageHooks {
 		if ( isset( $skin->data['nav_urls']['citeThisPage'] ) ) {
 			echo Html::rawElement(
 				'li',
-				array( 'id' => 't-cite' ),
+				[ 'id' => 't-cite' ],
 				Linker::link(
 					SpecialPage::getTitleFor( 'CiteThisPage' ),
 					wfMessage( 'citethispage-link' )->escaped(),

@@ -31,29 +31,29 @@ class SpecialCiteThisPage extends SpecialPage {
 	private function showForm( Title $title = null ) {
 		$this->getOutput()->addHTML(
 			Xml::openElement( 'form',
-				array(
+				[
 					'id' => 'specialCiteThisPage',
 					'method' => 'get',
 					'action' => wfScript(),
-				) ) .
+				] ) .
 			Html::hidden( 'title', SpecialPage::getTitleFor( 'CiteThisPage' )->getPrefixedDBkey() ) .
 			Xml::openElement( 'label' ) .
 			$this->msg( 'citethispage-change-target' )->escaped() . ' ' .
 			Xml::element( 'input',
-				array(
+				[
 					'type' => 'text',
 					'size' => 30,
 					'name' => 'page',
 					'value' => $title ? $title->getPrefixedText() : ''
-				),
+				],
 				''
 			) .
 			' ' .
 			Xml::element( 'input',
-				array(
+				[
 					'type' => 'submit',
 					'value' => $this->msg( 'citethispage-change-submit' )->escaped()
-				),
+				],
 				''
 			) .
 			Xml::closeElement( 'label' ) .
@@ -73,11 +73,11 @@ class SpecialCiteThisPage extends SpecialPage {
 		$title = Title::newFromText( $search );
 		if ( !$title || !$title->canExist() ) {
 			// No prefix suggestion in special and media namespace
-			return array();
+			return [];
 		}
 		// Autocomplete subpage the same as a normal search
 		$prefixSearcher = new StringPrefixSearch;
-		$result = $prefixSearcher->search( $search, $limit, array(), $offset );
+		$result = $prefixSearcher->search( $search, $limit, [], $offset );
 		return $result;
 	}
 
@@ -118,18 +118,18 @@ class CiteThisPageOutput {
 		$this->mArticle = new Article( $title );
 		$this->mId = $id;
 
-		$wgHooks['ParserGetVariableValueVarCache'][] = array( $this, 'varCache' );
+		$wgHooks['ParserGetVariableValueVarCache'][] = [ $this, 'varCache' ];
 
 		$this->genParserOptions();
 		$this->genParser();
 
-		$wgParser->setHook( 'citation', array( $this, 'citationTagParse' ) );
+		$wgParser->setHook( 'citation', [ $this, 'citationTagParse' ] );
 	}
 
 	function execute() {
 		global $wgOut, $wgParser, $wgHooks;
 
-		$wgHooks['ParserGetVariableValueTs'][] = array( $this, 'timestamp' );
+		$wgHooks['ParserGetVariableValueTs'][] = [ $this, 'timestamp' ];
 
 		$msg = wfMessage( 'citethispage-content' )->inContentLanguage()->plain();
 		if ( $msg == '' ) {
@@ -142,7 +142,7 @@ class CiteThisPageOutput {
 			$code = $wgContLang->lc( $wgContLanguageCode );
 			if ( file_exists( "${dir}citethispage-content-$code" ) ) {
 				$msg = file_get_contents( "${dir}citethispage-content-$code" );
-			} elseif( file_exists( "${dir}citethispage-content" ) ){
+			} elseif ( file_exists( "${dir}citethispage-content" ) ){
 				$msg = file_get_contents( "${dir}citethispage-content" );
 			}
 		}
