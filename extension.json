@@ -20,9 +20,7 @@
 		"SkinTemplateBuildNavUrlsNav_urlsAfterPermalink": [
 			"CiteThisPageHooks::onSkinTemplateBuildNavUrlsNav_urlsAfterPermalink"
 		],
-		"SkinTemplateToolboxEnd": [
-			"CiteThisPageHooks::onSkinTemplateToolboxEnd"
-		]
+		"BaseTemplateToolbox": "CiteThisPageHooks::onBaseTemplateToolbox"
 	},
 	"ResourceModules": {
 		"ext.citeThisPage": {
