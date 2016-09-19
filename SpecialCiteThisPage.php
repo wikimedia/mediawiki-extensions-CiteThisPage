@@ -1,18 +1,17 @@
 <?php
 
 class SpecialCiteThisPage extends SpecialPage {
+
+	/**
+	 * @var Parser
+	 */
+	private $citationParser;
+
 	public function __construct() {
 		parent::__construct( 'CiteThisPage' );
 	}
 
 	public function execute( $par ) {
-		global $wgUseTidy;
-
-		// Having tidy on causes whitespace and <pre> tags to
-		// be generated around the output of the CiteThisPageOutput
-		// class TODO FIXME.
-		$wgUseTidy = false;
-
 		$this->setHeaders();
 		$this->outputHeader();
 
@@ -23,8 +22,7 @@ class SpecialCiteThisPage extends SpecialPage {
 
 		if ( $title && $title->exists() ) {
 			$id = $this->getRequest()->getInt( 'id' );
-			$cout = new CiteThisPageOutput( $title, $id );
-			$cout->execute();
+			$this->showCitations( $title, $id );
 		}
 	}
 
@@ -84,54 +82,62 @@ class SpecialCiteThisPage extends SpecialPage {
 	protected function getGroupName() {
 		return 'pagetools';
 	}
-}
 
-class CiteThisPageOutput {
-	/**
-	 * @var Title
-	 */
-	public $mTitle;
+	private function showCitations( Title $title, $revId ) {
+		if ( !$revId ) {
+			$revId = $title->getLatestRevID();
+		}
 
-	/**
-	 * @var Article
-	 */
-	public $mArticle;
+		$out = $this->getOutput();
 
-	public $mId;
+		$revision = Revision::newFromTitle( $title, $revId );
+		if ( !$revision ) {
+			$out->wrapWikiMsg( '<div class="errorbox">$1</div>',
+				[ 'citethispage-badrevision', $title->getPrefixedText(), $revId ] );
+			return;
+		}
 
-	/**
-	 * @var Parser
-	 */
-	public $mParser;
+		$parserOptions = $this->getParserOptions();
+		// Set the overall timestamp to the revision's timestamp
+		$parserOptions->setTimestamp( $revision->getTimestamp() );
 
-	/**
-	 * @var ParserOptions
-	 */
-	public $mParserOptions;
+		$parser = $this->getParser();
+		// Register our <citation> tag which just parses using a different
+		// context
+		$parser->setHook( 'citation', [ $this, 'citationTag' ] );
+		// Also hold on to a separate Parser instance for <citation> tag parsing
+		// since we can't parse in a parse using the same Parser
+		$this->citationParser = $this->getParser();
 
-	public $mSpTitle;
+		$ret = $parser->parse(
+			$this->getContentText(),
+			$title,
+			$parserOptions,
+			/* $linestart = */ false,
+			/* $clearstate = */ true,
+			$revId
+		);
 
-	function __construct( $title, $id ) {
-		global $wgHooks, $wgParser;
+		$this->getOutput()->addModuleStyles( 'ext.citeThisPage' );
+		$this->getOutput()->addParserOutputContent( $ret );
 
-		$this->mTitle = $title;
-		$this->mArticle = new Article( $title );
-		$this->mId = $id;
-
-		$wgHooks['ParserGetVariableValueVarCache'][] = [ $this, 'varCache' ];
-
-		$this->genParserOptions();
-		$this->genParser();
-
-		$wgParser->setHook( 'citation', [ $this, 'citationTagParse' ] );
 	}
 
-	function execute() {
-		global $wgOut, $wgParser, $wgHooks;
+	/**
+	 * @return Parser
+	 */
+	private function getParser() {
+		$parserConf = $this->getConfig()->get( 'ParserConf' );
+		return new $parserConf['class']( $parserConf );
+	}
 
-		$wgHooks['ParserGetVariableValueTs'][] = [ $this, 'timestamp' ];
-
-		$msg = wfMessage( 'citethispage-content' )->inContentLanguage()->plain();
+	/**
+	 * Get the content to parse
+	 *
+	 * @return string
+	 */
+	private function getContentText() {
+		$msg = $this->msg( 'citethispage-content' )->inContentLanguage()->plain();
 		if ( $msg == '' ) {
 			# With MediaWiki 1.20 the plain text files were deleted
 			# and the text moved into SpecialCite.i18n.php
@@ -146,49 +152,49 @@ class CiteThisPageOutput {
 				$msg = file_get_contents( "${dir}citethispage-content" );
 			}
 		}
-		$ret = $wgParser->parse(
-			$msg, $this->mTitle, $this->mParserOptions, false, true, $this->getRevId()
+
+		return $msg;
+	}
+
+	/**
+	 * Get the common ParserOptions for both parses
+	 *
+	 * @return ParserOptions
+	 */
+	private function getParserOptions() {
+		$parserOptions = ParserOptions::newFromUser( $this->getUser() );
+		$parserOptions->setDateFormat( 'default' );
+		$parserOptions->setEditSection( false );
+
+		// Having tidy on causes whitespace and <pre> tags to
+		// be generated around the output of the CiteThisPageOutput
+		// class TODO FIXME.
+		$parserOptions->setTidy( false );
+
+		return $parserOptions;
+	}
+
+	/**
+	 * Implements the <citation> tag.
+	 *
+	 * This is a hack to allow content that is typically parsed
+	 * using the page's timestamp/pagetitle to use the current
+	 * request's time and title
+	 *
+	 * @param string $text
+	 * @param array $params
+	 * @param Parser $parser
+	 * @return string
+	 */
+	public function citationTag( $text, $params, Parser $parser ) {
+		$ret = $this->citationParser->parse(
+			$text,
+			$this->getPageTitle(),
+			$this->getParserOptions(),
+			/* $linestart = */ false
 		);
-		$wgOut->addModuleStyles( 'ext.citeThisPage' );
-
-		$wgOut->addParserOutputContent( $ret );
-	}
-
-	function genParserOptions() {
-		global $wgUser;
-		$this->mParserOptions = ParserOptions::newFromUser( $wgUser );
-		$this->mParserOptions->setDateFormat( 'default' );
-		$this->mParserOptions->setEditSection( false );
-	}
-
-	function genParser() {
-		$this->mParser = new Parser;
-		$this->mSpTitle = SpecialPage::getTitleFor( 'CiteThisPage' );
-	}
-
-	function citationTagParse( $in, $argv ) {
-		$ret = $this->mParser->parse( $in, $this->mSpTitle, $this->mParserOptions, false );
 
 		return $ret->getText();
-	}
 
-	function varCache() {
-		return false;
-	}
-
-	function timestamp( &$parser, &$ts ) {
-		if ( isset( $parser->mTagHooks['citation'] ) ) {
-			$ts = wfTimestamp( TS_UNIX, $this->mArticle->getTimestamp() );
-		}
-
-		return true;
-	}
-
-	function getRevId() {
-		if ( $this->mId ) {
-			return $this->mId;
-		} else {
-			return $this->mTitle->getLatestRevID();
-		}
 	}
 }
