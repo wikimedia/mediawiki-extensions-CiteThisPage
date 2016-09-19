@@ -151,12 +151,7 @@ class CiteThisPageOutput {
 		);
 		$wgOut->addModuleStyles( 'ext.citeThisPage' );
 
-		# Introduced in 1.24
-		if ( method_exists( $wgOut, 'addParserOutputContent' ) ) {
-			$wgOut->addParserOutputContent( $ret );
-		} else {
-			$wgOut->addHTML( $ret->getText() );
-		}
+		$wgOut->addParserOutputContent( $ret );
 	}
 
 	function genParserOptions() {
