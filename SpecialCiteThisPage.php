@@ -1,62 +1,55 @@
 <?php
 
-class SpecialCiteThisPage extends SpecialPage {
+class SpecialCiteThisPage extends FormSpecialPage {
 
 	/**
 	 * @var Parser
 	 */
 	private $citationParser;
 
+	/**
+	 * @var Title|bool
+	 */
+	protected $title = false;
+
 	public function __construct() {
 		parent::__construct( 'CiteThisPage' );
 	}
 
+	/**
+	 * @param $par string
+	 */
 	public function execute( $par ) {
 		$this->setHeaders();
-		$this->outputHeader();
-
-		$page = $par !== null ? $par : $this->getRequest()->getText( 'page' );
-		$title = Title::newFromText( $page );
-
-		$this->showForm( $title );
-
-		if ( $title && $title->exists() ) {
+		parent::execute( $par );
+		if ( $this->title !== false ) {
 			$id = $this->getRequest()->getInt( 'id' );
-			$this->showCitations( $title, $id );
+			$this->showCitations( $this->title, $id );
 		}
 	}
 
-	private function showForm( Title $title = null ) {
-		$this->getOutput()->addHTML(
-			Xml::openElement( 'form',
-				[
-					'id' => 'specialCiteThisPage',
-					'method' => 'get',
-					'action' => wfScript(),
-				] ) .
-			Html::hidden( 'title', SpecialPage::getTitleFor( 'CiteThisPage' )->getPrefixedDBkey() ) .
-			Xml::openElement( 'label' ) .
-			$this->msg( 'citethispage-change-target' )->escaped() . ' ' .
-			Xml::element( 'input',
-				[
-					'type' => 'text',
-					'size' => 30,
-					'name' => 'page',
-					'value' => $title ? $title->getPrefixedText() : ''
-				],
-				''
-			) .
-			' ' .
-			Xml::element( 'input',
-				[
-					'type' => 'submit',
-					'value' => $this->msg( 'citethispage-change-submit' )->escaped()
-				],
-				''
-			) .
-			Xml::closeElement( 'label' ) .
-			Xml::closeElement( 'form' )
-		);
+	protected function alterForm( HTMLForm $form ) {
+		$form->setMethod( 'get' );
+	}
+
+	protected function getFormFields() {
+		if ( isset( $this->par ) ) {
+			$default = $this->par;
+		} else {
+			$default = '';
+		}
+		return [
+			'page' => [
+				'name' => 'page',
+				'type' => 'title',
+				'default' => $default,
+				'label-message' => 'citethispage-change-target'
+			]
+		];
+	}
+
+	public function onSubmit( array $data ) {
+		$this->title = Title::newFromText( $data['page'] );
 	}
 
 	/**
@@ -196,5 +189,9 @@ class SpecialCiteThisPage extends SpecialPage {
 
 		return $ret->getText();
 
+	}
+
+	protected function getDisplayFormat() {
+		return 'ooui';
 	}
 }
