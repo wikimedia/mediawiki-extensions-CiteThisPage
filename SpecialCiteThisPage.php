@@ -22,7 +22,7 @@ class SpecialCiteThisPage extends FormSpecialPage {
 	public function execute( $par ) {
 		$this->setHeaders();
 		parent::execute( $par );
-		if ( $this->title !== false ) {
+		if ( $this->title instanceof Title ) {
 			$id = $this->getRequest()->getInt( 'id' );
 			$this->showCitations( $this->title, $id );
 		}
@@ -49,7 +49,12 @@ class SpecialCiteThisPage extends FormSpecialPage {
 	}
 
 	public function onSubmit( array $data ) {
-		$this->title = Title::newFromText( $data['page'] );
+		// GET forms are "submitted" on every view, so check
+		// that some data was put in for page, as empty string
+		// will pass validation
+		if ( strlen( $data['page'] ) ) {
+			$this->title = Title::newFromText( $data['page'] );
+		}
 	}
 
 	/**
