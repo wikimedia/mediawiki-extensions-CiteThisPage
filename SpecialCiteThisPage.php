@@ -203,4 +203,8 @@ class SpecialCiteThisPage extends FormSpecialPage {
 	public function requiresUnblock() {
 		return false;
 	}
+
+	public function requiresWrite() {
+		return false;
+	}
 }
