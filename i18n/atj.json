@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Benoit Rochon"
+			"Benoit Rochon",
+			"Ninmeka"
 		]
 	},
-	"citethispage-link": "Wita ohwe ka masinatek"
+	"citethispage-link": "Wita ohwe ka masinatek",
+	"tooltip-citethispage": "Ka ki totcikatek kitci tipatcitcikatek ohwe ka masinatek"
 }
