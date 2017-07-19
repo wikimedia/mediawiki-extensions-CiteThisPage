@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Hitaypayan"
+			"Hitaypayan",
+			"Translatealcd"
 		]
 	},
-	"citethispage-link": "Glaniy sa gnyahan llpgan qaniy",
-	"tooltip-citethispage": "Nanu’ quw ssawn nanu’ magal zyuwaw sinbbaq na llpgan qaniy"
+	"citethispage-link": "Glaniy sa zzngayan qaniy",
+	"tooltip-citethispage": "Nanu’ quw ssawn nanu’ magal zyuwaw sinbbaq na zzngayan qaniy"
 }
