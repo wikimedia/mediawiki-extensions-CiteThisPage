@@ -1,8 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Malafaya"
+			"Malafaya",
+			"MokaAkashiyaPT"
 		]
 	},
+	"citethispage": "Citar esta páigina",
+	"citethispage-link": "Citar esta páigina",
+	"tooltip-citethispage": "Anformaçon subre cumo citar esta páigina",
 	"citethispage-change-target": "Páigina:"
 }
