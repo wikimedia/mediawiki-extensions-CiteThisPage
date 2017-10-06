@@ -3,10 +3,10 @@
 class CiteThisPageHooks {
 
 	/**
-	 * @param SkinTemplate $skintemplate
-	 * @param $nav_urls
-	 * @param $oldid
-	 * @param $revid
+	 * @param SkinTemplate &$skintemplate
+	 * @param array &$nav_urls
+	 * @param int &$oldid
+	 * @param int &$revid
 	 * @return bool
 	 */
 	public static function onSkinTemplateBuildNavUrlsNav_urlsAfterPermalink(
@@ -49,7 +49,7 @@ class CiteThisPageHooks {
 
 	/**
 	 * @param BaseTemplate $baseTemplate
-	 * @param array $toolbox
+	 * @param array &$toolbox
 	 * @return bool
 	 */
 	public static function onBaseTemplateToolbox( BaseTemplate $baseTemplate, array &$toolbox ) {

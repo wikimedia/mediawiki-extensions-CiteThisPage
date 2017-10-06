@@ -17,7 +17,7 @@ class SpecialCiteThisPage extends FormSpecialPage {
 	}
 
 	/**
-	 * @param $par string
+	 * @param string $par
 	 */
 	public function execute( $par ) {
 		$this->setHeaders();
