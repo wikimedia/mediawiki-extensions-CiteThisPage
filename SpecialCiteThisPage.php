@@ -184,10 +184,14 @@ class SpecialCiteThisPage extends FormSpecialPage {
 	 * @return string
 	 */
 	public function citationTag( $text, $params, Parser $parser ) {
+		$parserOptions = $this->getParserOptions();
+		// This will be inserted into the output of another parser, so there will actually be a wrapper
+		$parserOptions->setWrapOutputClass( false );
+
 		$ret = $this->citationParser->parse(
 			$text,
 			$this->getPageTitle(),
-			$this->getParserOptions(),
+			$parserOptions,
 			/* $linestart = */ false
 		);
 
