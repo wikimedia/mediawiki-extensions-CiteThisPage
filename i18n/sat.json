@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Manik Soren"
+			"Manik Soren",
+			"Ramjit Tudu"
 		]
 	},
-	"citethispage-link": "ᱱᱤᱭᱟᱹ ᱥᱟᱦᱴᱟᱨᱮ ᱮᱴᱟᱜ ᱦᱚᱲᱟᱜ ᱠᱟᱛᱷᱟᱠᱩ ᱡᱚᱲᱟᱣᱢᱮ",
-	"tooltip-citethispage": "ᱱᱤᱭᱟᱹ ᱥᱟᱦᱴᱟ ᱨᱮᱱᱟᱜ ᱠᱟᱛᱷᱟᱠᱩ ᱥᱟᱶᱛᱮ ᱮᱴᱟᱜ ᱦᱚᱲᱟᱜ ᱠᱟᱛᱷᱟᱠᱩ ᱪᱮᱠᱟᱛᱮᱢ ᱡᱚᱝᱲᱟᱣᱭᱟ"
+	"citethispage-link": "ᱱᱚᱶᱟ ᱥᱟᱦᱴᱟ ᱡᱚᱲᱟᱣᱢᱮ",
+	"tooltip-citethispage": "ᱱᱚᱶᱟ ᱥᱟᱦᱴᱟ ᱡᱚᱲᱟᱣ ᱨᱮᱱᱟᱜ ᱥᱩᱪᱱᱟ"
 }
