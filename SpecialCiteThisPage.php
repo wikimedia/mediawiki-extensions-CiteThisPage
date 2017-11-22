@@ -117,7 +117,9 @@ class SpecialCiteThisPage extends FormSpecialPage {
 		);
 
 		$this->getOutput()->addModuleStyles( 'ext.citeThisPage' );
-		$this->getOutput()->addParserOutputContent( $ret );
+		$this->getOutput()->addParserOutputContent( $ret, [
+			'enableSectionEditLinks' => false,
+		] );
 	}
 
 	/**
@@ -161,7 +163,6 @@ class SpecialCiteThisPage extends FormSpecialPage {
 	private function getParserOptions() {
 		$parserOptions = ParserOptions::newFromUser( $this->getUser() );
 		$parserOptions->setDateFormat( 'default' );
-		$parserOptions->setEditSection( false );
 
 		// Having tidy on causes whitespace and <pre> tags to
 		// be generated around the output of the CiteThisPageOutput
@@ -195,7 +196,9 @@ class SpecialCiteThisPage extends FormSpecialPage {
 			/* $linestart = */ false
 		);
 
-		return $ret->getText();
+		return $ret->getText( [
+			'enableSectionEditLinks' => false,
+		] );
 	}
 
 	protected function getDisplayFormat() {
