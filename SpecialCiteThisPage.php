@@ -55,6 +55,7 @@ class SpecialCiteThisPage extends FormSpecialPage {
 		if ( strlen( $data['page'] ) ) {
 			$this->title = Title::newFromText( $data['page'] );
 		}
+		return true;
 	}
 
 	/**
@@ -72,9 +73,10 @@ class SpecialCiteThisPage extends FormSpecialPage {
 			return [];
 		}
 		// Autocomplete subpage the same as a normal search
-		$prefixSearcher = new StringPrefixSearch;
-		$result = $prefixSearcher->search( $search, $limit, [], $offset );
-		return $result;
+		$result = SearchEngine::completionSearch( $search );
+		return array_map( function ( $sub ) {
+			return $sub->getSuggestedTitle();
+		}, $result->getSuggestions() );
 	}
 
 	protected function getGroupName() {
