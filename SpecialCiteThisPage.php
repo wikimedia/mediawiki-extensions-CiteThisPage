@@ -188,8 +188,6 @@ class SpecialCiteThisPage extends FormSpecialPage {
 	 */
 	public function citationTag( $text, $params, Parser $parser ) {
 		$parserOptions = $this->getParserOptions();
-		// This will be inserted into the output of another parser, so there will actually be a wrapper
-		$parserOptions->setWrapOutputClass( false );
 
 		$ret = $this->citationParser->parse(
 			$text,
@@ -200,6 +198,8 @@ class SpecialCiteThisPage extends FormSpecialPage {
 
 		return $ret->getText( [
 			'enableSectionEditLinks' => false,
+			// This will be inserted into the output of another parser, so there will actually be a wrapper
+			'unwrap' => true,
 		] );
 	}
 
