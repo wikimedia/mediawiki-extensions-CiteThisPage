@@ -145,7 +145,7 @@ class SpecialCiteThisPage extends FormSpecialPage {
 			# This code is kept for b/c in case an installation has its own file "citethispage-content-xx"
 			# for a previously not supported language.
 			global $wgContLang, $wgContLanguageCode;
-			$dir = __DIR__ . DIRECTORY_SEPARATOR;
+			$dir = __DIR__ . '/../';
 			$code = $wgContLang->lc( $wgContLanguageCode );
 			if ( file_exists( "${dir}citethispage-content-$code" ) ) {
 				$msg = file_get_contents( "${dir}citethispage-content-$code" );

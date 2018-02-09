@@ -39,8 +39,8 @@
 		"CiteThisPage": "SpecialCiteThisPage"
 	},
 	"AutoloadClasses": {
-		"SpecialCiteThisPage": "SpecialCiteThisPage.php",
-		"CiteThisPageHooks": "CiteThisPage.hooks.php"
+		"SpecialCiteThisPage": "includes/SpecialCiteThisPage.php",
+		"CiteThisPageHooks": "includes/CiteThisPageHooks.php"
 	},
 	"config": {
 		"CiteThisPageAdditionalNamespaces": {
