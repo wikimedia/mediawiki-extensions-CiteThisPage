@@ -45,7 +45,7 @@ return [
 	 * your application should be included in this list.
 	 */
 	'directory_list' => [
-		'.',
+		'includes',
 		'./../../includes',
 		'./../../languages',
 		'./../../maintenance',
@@ -284,8 +284,6 @@ return [
 	 * (E.g. ['_FOO' => '\\FooClass', 'page' => '\\PageClass', 'userId' => 'int'])
 	 */
 	'globals_type_map' => [
-		'wgMessagesDirs' => 'array',
-		'wgExtensionMessagesFiles' => 'array'
 	],
 
 	// Emit issue messages with markdown formatting
