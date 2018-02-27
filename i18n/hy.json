@@ -4,11 +4,12 @@
 			"Chaojoker",
 			"Teak",
 			"Vadgt",
-			"Դավիթ Սարոյան"
+			"Դավիթ Սարոյան",
+			"Xelgen"
 		]
 	},
 	"citethispage": "Հոդվածի ծանոթագրություններ",
-	"citethispage-link": "Հոդվածում ծանոթագրություններ դնել",
+	"citethispage-link": "Մեջբերել այս էջը",
 	"tooltip-citethispage": "Տեղեկատվություն, թե ինչպես պետք է մեջբերել այս էջը",
 	"citethispage-change-submit": "Հղում դնել",
 	"citethispage-change-target": "Էջ.",
