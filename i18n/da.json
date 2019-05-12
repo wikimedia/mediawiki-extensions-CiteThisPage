@@ -4,12 +4,13 @@
 			"Byrial",
 			"Christian List",
 			"Morten LJ",
-			"Peter Alberti"
+			"Peter Alberti",
+			"Weblars"
 		]
 	},
-	"citethispage": "Citér",
+	"citethispage": "Referér",
 	"citethispage-desc": "Tilføjer en [[Special:Cite|specialside til citering]] og en henvisning i værktøjsmenuen",
-	"citethispage-link": "Citér denne side",
+	"citethispage-link": "Referér denne side",
 	"tooltip-citethispage": "Information om, hvordan man kan citere denne side",
 	"citethispage-change-submit": "Citér",
 	"citethispage-change-target": "Side:",
