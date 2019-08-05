@@ -2,11 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Filipinayzd",
-			"Geopoet"
+			"Geopoet",
+			"Brazal.dang"
 		]
 	},
 	"citethispage": "Sambiton",
-	"citethispage-desc": "Nagdudugang nin sarong [[Special:Cite|citation]] espesyal na pahina asin kasugpunan sa palindông kahon",
+	"citethispage-desc": "Nagdudugang nin sarong [[Special:CiteThisPage|citation]] espesyal na pahina asin kasugpunan sa palindông kahon",
 	"citethispage-link": "Isambit ining pahina",
 	"tooltip-citethispage": "Impormasyon kun paanuhon na sambiton ining pahina",
 	"citethispage-change-submit": "Sambiton",
