@@ -21,6 +21,7 @@ class SpecialCiteThisPage extends FormSpecialPage {
 	 */
 	public function execute( $par ) {
 		$this->setHeaders();
+		$this->addHelpLink( 'Extension:CiteThisPage' );
 		parent::execute( $par );
 		if ( $this->title instanceof Title ) {
 			$id = $this->getRequest()->getInt( 'id' );
