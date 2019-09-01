@@ -125,7 +125,7 @@ $specialPageAliases['es'] = [
 
 /** Estonian (eesti) */
 $specialPageAliases['et'] = [
-	'CiteThisPage' => [ 'Tsiteerimine' ],
+	'CiteThisPage' => [ 'Sellele_leheküljele_viitamine', 'Tsiteerimine' ],
 ];
 
 /** Persian (فارسی) */
