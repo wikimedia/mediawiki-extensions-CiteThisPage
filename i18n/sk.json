@@ -2,11 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Helix84",
-			"Martin Kozák"
+			"Martin Kozák",
+			"Vlad5250"
 		]
 	},
 	"citethispage": "Citovať",
-	"citethispage-desc": "Pridáva špeciálnu stránku [[Special:Cite|Citovať]] a odkaz v nástrojoch",
+	"citethispage-desc": "Pridáva špeciálnu stránku [[Special:CiteThisPage|Citovať]] a odkaz v nástrojoch",
 	"citethispage-link": "Citovať túto stránku",
 	"tooltip-citethispage": "Ako citovať túto stránku",
 	"citethispage-change-submit": "Citovať",
