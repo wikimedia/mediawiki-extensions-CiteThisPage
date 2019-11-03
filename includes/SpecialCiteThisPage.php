@@ -70,16 +70,7 @@ class SpecialCiteThisPage extends FormSpecialPage {
 	 * @return string[] Matching subpages
 	 */
 	public function prefixSearchSubpages( $search, $limit, $offset ) {
-		$title = Title::newFromText( $search );
-		if ( !$title || !$title->canExist() ) {
-			// No prefix suggestion in special and media namespace
-			return [];
-		}
-		// Autocomplete subpage the same as a normal search
-		$result = SearchEngine::completionSearch( $search );
-		return array_map( function ( $sub ) {
-			return $sub->getSuggestedTitle();
-		}, $result->getSuggestions() );
+		return $this->prefixSearchString( $search, $limit, $offset );
 	}
 
 	protected function getGroupName() {
