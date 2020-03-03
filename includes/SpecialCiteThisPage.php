@@ -33,6 +33,7 @@ class SpecialCiteThisPage extends FormSpecialPage {
 
 	protected function alterForm( HTMLForm $form ) {
 		$form->setMethod( 'get' );
+		$form->setFormIdentifier( 'titleform' );
 	}
 
 	protected function getFormFields() {
@@ -53,8 +54,7 @@ class SpecialCiteThisPage extends FormSpecialPage {
 
 	public function onSubmit( array $data ) {
 		// GET forms are "submitted" on every view, so check
-		// that some data was put in for page, as empty string
-		// will pass validation
+		// that some data was put in for page
 		if ( strlen( $data['page'] ) ) {
 			$this->title = Title::newFromText( $data['page'] );
 		}
