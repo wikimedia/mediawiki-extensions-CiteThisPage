@@ -3,12 +3,13 @@
 		"authors": [
 			"Candalua",
 			"GatoSelvadego",
-			"Conky77"
+			"Conky77",
+			"Fierodelveneto"
 		]
 	},
 	"citethispage": "Citazion",
 	"citethispage-desc": "Zonta na pagina speciale par le [[Special:Cite|citazion]] e un colegamento nei strumenti",
-	"citethispage-link": "Cita sta pagina",
+	"citethispage-link": "Çita sta pajina",
 	"tooltip-citethispage": "Informassion su come citar sta pagina",
 	"citethispage-change-submit": "Crea la citazion",
 	"citethispage-change-target": "Pagina da citar:",
