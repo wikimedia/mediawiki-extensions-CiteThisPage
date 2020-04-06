@@ -8,10 +8,11 @@
 			"PiefPafPier"
 		]
 	},
-	"citethispage": "Sitearje",
-	"citethispage-desc": "Foeget in [[Special:CiteThisPage|spesjale side]] om te sitearjen, lykas in ferwizing nei de helpmiddels, ta.",
-	"citethispage-link": "Sitearje dizze side",
+	"citethispage": "Side sitearje",
+	"citethispage-desc": "Foeget in bysûndere side foar [[Special:CiteThisPage|sitearjen]] ta, en de ferwizing yn 'e arkbalke",
+	"citethispage-link": "Dizze side sitearje",
 	"tooltip-citethispage": "Op hokker wize dizze side sitearre wurde kin",
 	"citethispage-change-submit": "Sitearje",
-	"citethispage-change-target": "Side:"
+	"citethispage-change-target": "Side:",
+	"citethispage-badrevision": "Flater: kin gjin ferzje fine fan de side \"$1\" mei it ferzjenûmer $2."
 }
