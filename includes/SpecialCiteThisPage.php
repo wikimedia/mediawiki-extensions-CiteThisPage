@@ -84,8 +84,11 @@ class SpecialCiteThisPage extends FormSpecialPage {
 
 		$out = $this->getOutput();
 
-		$revision = Revision::newFromTitle( $title, $revId );
-		if ( !$revision ) {
+		$revTimestamp = MediaWikiServices::getInstance()
+			->getRevisionLookup()
+			->getTimestampFromId( $revId );
+
+		if ( !$revTimestamp ) {
 			$out->wrapWikiMsg( '<div class="errorbox">$1</div>',
 				[ 'citethispage-badrevision', $title->getPrefixedText(), $revId ] );
 			return;
@@ -93,7 +96,7 @@ class SpecialCiteThisPage extends FormSpecialPage {
 
 		$parserOptions = $this->getParserOptions();
 		// Set the overall timestamp to the revision's timestamp
-		$parserOptions->setTimestamp( $revision->getTimestamp() );
+		$parserOptions->setTimestamp( $revTimestamp );
 
 		$parser = $this->getParser();
 		// Register our <citation> tag which just parses using a different
