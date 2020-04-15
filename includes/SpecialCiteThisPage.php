@@ -164,12 +164,6 @@ class SpecialCiteThisPage extends FormSpecialPage {
 		$parserOptions = ParserOptions::newFromUser( $this->getUser() );
 		$parserOptions->setDateFormat( 'default' );
 		$parserOptions->setInterfaceMessage( true );
-
-		// Having tidy on causes whitespace and <pre> tags to
-		// be generated around the output of the CiteThisPageOutput
-		// class TODO FIXME.
-		$parserOptions->setTidy( false );
-
 		return $parserOptions;
 	}
 
@@ -195,11 +189,12 @@ class SpecialCiteThisPage extends FormSpecialPage {
 			/* $linestart = */ false
 		);
 
-		return $ret->getText( [
+		return Parser::stripOuterParagraph( $ret->getText( [
 			'enableSectionEditLinks' => false,
 			// This will be inserted into the output of another parser, so there will actually be a wrapper
 			'unwrap' => true,
-		] );
+			'wrapperDivClass' => '',
+		] ) );
 	}
 
 	protected function getDisplayFormat() {
