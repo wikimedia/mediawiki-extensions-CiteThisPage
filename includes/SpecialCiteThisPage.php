@@ -125,8 +125,8 @@ class SpecialCiteThisPage extends FormSpecialPage {
 	 * @return Parser
 	 */
 	private function getParser() {
-		$parserConf = $this->getConfig()->get( 'ParserConf' );
-		return new $parserConf['class']( $parserConf );
+		$parserFactory = MediaWikiServices::getInstance()->getParserFactory();
+		return $parserFactory->create();
 	}
 
 	/**
