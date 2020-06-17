@@ -22,41 +22,39 @@ class CiteThisPageHooks {
 	/**
 	 * @param Skin $skin
 	 * @param string[] &$sidebar
-	 * @return bool
+	 * @return void
 	 */
-	public static function onSidebarBeforeOutput( Skin $skin, array &$sidebar ) {
+	public static function onSidebarBeforeOutput( Skin $skin, array &$sidebar ): void {
 		$out = $skin->getOutput();
 		$title = $out->getTitle();
 
 		if ( !self::shouldAddLink( $title ) ) {
-			return false;
+			return;
 		}
 
 		$revid = $out->getRevisionId();
 
-		if ( $revid !== 0 && !empty( $revid ) ) {
-			$specialPage = SpecialPage::getTitleFor( 'CiteThisPage' );
-			$citeURL = $specialPage->getLocalURL( [
-					'page' => $title->getPrefixedDBkey(),
-					'id' => $revid,
-					'wpFormIdentifier' => 'titleform'
-				]
-			);
-
-			$citeThisPageLink = [
-				'id' => 't-cite',
-				'href' => $citeURL,
-				'text' => $skin->msg( 'citethispage-link' )->text(),
-				// Message keys: 'tooltip-citethispage', 'accesskey-citethispage'
-				'single-id' => 'citethispage',
-			];
-
-			// Append link
-			$sidebar['TOOLBOX']['citethispage'] = $citeThisPageLink;
-
-			return true;
+		if ( $revid === 0 || empty( $revid ) ) {
+			return;
 		}
 
-		return false;
+		$specialPage = SpecialPage::getTitleFor( 'CiteThisPage' );
+		$citeURL = $specialPage->getLocalURL( [
+				'page' => $title->getPrefixedDBkey(),
+				'id' => $revid,
+				'wpFormIdentifier' => 'titleform'
+			]
+		);
+
+		$citeThisPageLink = [
+			'id' => 't-cite',
+			'href' => $citeURL,
+			'text' => $skin->msg( 'citethispage-link' )->text(),
+			// Message keys: 'tooltip-citethispage', 'accesskey-citethispage'
+			'single-id' => 'citethispage',
+		];
+
+		// Append link
+		$sidebar['TOOLBOX']['citethispage'] = $citeThisPageLink;
 	}
 }
