@@ -1,6 +1,13 @@
 <?php
 
+namespace MediaWiki\Extension\CiteThisPage;
+
+use FormSpecialPage;
+use HTMLForm;
 use MediaWiki\MediaWikiServices;
+use Parser;
+use ParserOptions;
+use Title;
 
 class SpecialCiteThisPage extends FormSpecialPage {
 
@@ -37,16 +44,11 @@ class SpecialCiteThisPage extends FormSpecialPage {
 	}
 
 	protected function getFormFields() {
-		if ( isset( $this->par ) ) {
-			$default = $this->par;
-		} else {
-			$default = '';
-		}
 		return [
 			'page' => [
 				'name' => 'page',
 				'type' => 'title',
-				'default' => $default,
+				'default' => $this->par ?? '',
 				'label-message' => 'citethispage-change-target'
 			]
 		];

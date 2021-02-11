@@ -1,6 +1,12 @@
 <?php
 
-class CiteThisPageHooks {
+namespace MediaWiki\Extension\CiteThisPage;
+
+use Skin;
+use SpecialPage;
+use Title;
+
+class Hooks {
 	/**
 	 * Checks, if the "cite this page" link should be added. By default the link is added to all
 	 * pages in the main namespace, and additionally to pages, which are in one of the namespaces
