@@ -4,9 +4,11 @@ namespace MediaWiki\Extension\CiteThisPage;
 
 use FormSpecialPage;
 use HTMLForm;
-use MediaWiki\MediaWikiServices;
+use MediaWiki\Revision\RevisionLookup;
 use Parser;
+use ParserFactory;
 use ParserOptions;
+use SearchEngineFactory;
 use Title;
 
 class SpecialCiteThisPage extends FormSpecialPage {
@@ -21,8 +23,29 @@ class SpecialCiteThisPage extends FormSpecialPage {
 	 */
 	protected $title = false;
 
-	public function __construct() {
+	/** @var SearchEngineFactory */
+	private $searchEngineFactory;
+
+	/** @var RevisionLookup */
+	private $revisionLookup;
+
+	/** @var ParserFactory */
+	private $parserFactory;
+
+	/**
+	 * @param SearchEngineFactory $searchEngineFactory
+	 * @param RevisionLookup $revisionLookup
+	 * @param ParserFactory $parserFactory
+	 */
+	public function __construct(
+		SearchEngineFactory $searchEngineFactory,
+		RevisionLookup $revisionLookup,
+		ParserFactory $parserFactory
+	) {
 		parent::__construct( 'CiteThisPage' );
+		$this->searchEngineFactory = $searchEngineFactory;
+		$this->revisionLookup = $revisionLookup;
+		$this->parserFactory = $parserFactory;
 	}
 
 	/**
@@ -73,7 +96,7 @@ class SpecialCiteThisPage extends FormSpecialPage {
 	 * @return string[] Matching subpages
 	 */
 	public function prefixSearchSubpages( $search, $limit, $offset ) {
-		return $this->prefixSearchString( $search, $limit, $offset );
+		return $this->prefixSearchString( $search, $limit, $offset, $this->searchEngineFactory );
 	}
 
 	protected function getGroupName() {
@@ -87,9 +110,7 @@ class SpecialCiteThisPage extends FormSpecialPage {
 
 		$out = $this->getOutput();
 
-		$revTimestamp = MediaWikiServices::getInstance()
-			->getRevisionLookup()
-			->getTimestampFromId( $revId );
+		$revTimestamp = $this->revisionLookup->getTimestampFromId( $revId );
 
 		if ( !$revTimestamp ) {
 			$out->wrapWikiMsg( '<div class="errorbox">$1</div>',
@@ -101,13 +122,14 @@ class SpecialCiteThisPage extends FormSpecialPage {
 		// Set the overall timestamp to the revision's timestamp
 		$parserOptions->setTimestamp( $revTimestamp );
 
-		$parser = $this->getParser();
+		$parser = $this->parserFactory->create();
 		// Register our <citation> tag which just parses using a different
 		// context
 		$parser->setHook( 'citation', [ $this, 'citationTag' ] );
+
 		// Also hold on to a separate Parser instance for <citation> tag parsing
 		// since we can't parse in a parse using the same Parser
-		$this->citationParser = $this->getParser();
+		$this->citationParser = $this->parserFactory->create();
 
 		$ret = $parser->parse(
 			$this->getContentText(),
@@ -125,14 +147,6 @@ class SpecialCiteThisPage extends FormSpecialPage {
 	}
 
 	/**
-	 * @return Parser
-	 */
-	private function getParser() {
-		$parserFactory = MediaWikiServices::getInstance()->getParserFactory();
-		return $parserFactory->create();
-	}
-
-	/**
 	 * Get the content to parse
 	 *
 	 * @return string
@@ -144,10 +158,9 @@ class SpecialCiteThisPage extends FormSpecialPage {
 			# and the text moved into SpecialCite.i18n.php
 			# This code is kept for b/c in case an installation has its own file "citethispage-content-xx"
 			# for a previously not supported language.
-			global $wgLanguageCode;
 			$dir = __DIR__ . '/../';
-			$code = MediaWikiServices::getInstance()->getContentLanguage()
-				->lc( $wgLanguageCode );
+			$contentLang = $this->getContentLanguage();
+			$code = $contentLang->lc( $contentLang->getCode() );
 			if ( file_exists( "${dir}citethispage-content-$code" ) ) {
 				$msg = file_get_contents( "${dir}citethispage-content-$code" );
 			} elseif ( file_exists( "${dir}citethispage-content" ) ) {
