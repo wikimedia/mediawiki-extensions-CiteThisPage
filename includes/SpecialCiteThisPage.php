@@ -61,11 +61,17 @@ class SpecialCiteThisPage extends FormSpecialPage {
 		}
 	}
 
+	/**
+	 * @param HTMLForm $form
+	 */
 	protected function alterForm( HTMLForm $form ) {
 		$form->setMethod( 'get' );
 		$form->setFormIdentifier( 'titleform' );
 	}
 
+	/**
+	 * @return array
+	 */
 	protected function getFormFields() {
 		return [
 			'page' => [
@@ -78,6 +84,10 @@ class SpecialCiteThisPage extends FormSpecialPage {
 		];
 	}
 
+	/**
+	 * @param array $data
+	 * @return bool
+	 */
 	public function onSubmit( array $data ) {
 		// GET forms are "submitted" on every view, so check
 		// that some data was put in for page
@@ -99,10 +109,15 @@ class SpecialCiteThisPage extends FormSpecialPage {
 		return $this->prefixSearchString( $search, $limit, $offset, $this->searchEngineFactory );
 	}
 
+	/** @inheritDoc */
 	protected function getGroupName() {
 		return 'pagetools';
 	}
 
+	/**
+	 * @param Title $title
+	 * @param int $revId
+	 */
 	private function showCitations( Title $title, $revId ) {
 		if ( !$revId ) {
 			$revId = $title->getLatestRevID();
@@ -213,14 +228,17 @@ class SpecialCiteThisPage extends FormSpecialPage {
 		] ) );
 	}
 
+	/** @inheritDoc */
 	protected function getDisplayFormat() {
 		return 'ooui';
 	}
 
+	/** @inheritDoc */
 	public function requiresUnblock() {
 		return false;
 	}
 
+	/** @inheritDoc */
 	public function requiresWrite() {
 		return false;
 	}
