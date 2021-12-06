@@ -12,11 +12,15 @@ class Hooks implements \MediaWiki\Hook\SidebarBeforeOutputHook {
 	 * pages in the main namespace, and additionally to pages, which are in one of the namespaces
 	 * named in $wgCiteThisPageAddiotionalNamespaces.
 	 *
-	 * @param Title $title
-	 * @param Config $config
+	 * @param Title|null $title
+	 * @param Config|null $config
 	 * @return bool
 	 */
-	private static function shouldAddLink( Title $title, Config $config ) {
+	private static function shouldAddLink( ?Title $title, ?Config $config ) {
+		if ( !$title || !$config ) {
+			return false;
+		}
+
 		$additionalNamespaces = $config->get( 'CiteThisPageAdditionalNamespaces' );
 
 		return $title->isContentPage() ||
