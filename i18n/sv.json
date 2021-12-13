@@ -6,12 +6,13 @@
 			"Lokal Profil",
 			"Per",
 			"Sannab",
-			"WikiPhoenix"
+			"WikiPhoenix",
+			"Nirmos (Wikimedia)"
 		]
 	},
 	"citethispage": "Använd den här artikeln som referens",
 	"citethispage-desc": "Lägger till en specialsida för [[Special:CiteThisPage|källhänvisning]] och en länk i verktygslådan",
-	"citethispage-link": "Använd den här artikeln som referens",
+	"citethispage-link": "Använd som referens",
 	"tooltip-citethispage": "Information om hur den här artikeln kan användas som referens",
 	"citethispage-change-submit": "Använd som referens",
 	"citethispage-change-target": "Sida:",
