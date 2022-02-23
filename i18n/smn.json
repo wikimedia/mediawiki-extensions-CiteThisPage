@@ -2,9 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Trondtr",
-			"Yupik"
+			"Yupik",
+			"Seipinne"
 		]
 	},
 	"citethispage-link": "Lovnii taam siijđo",
-	"tooltip-citethispage": "Tiäđuh taan siijđo lovniimist"
+	"tooltip-citethispage": "Tiäđuh taan siijđo lovniimist",
+	"citethispage-change-submit": "Čuujoot",
+	"citethispage-change-target": "Sijđo:"
 }
