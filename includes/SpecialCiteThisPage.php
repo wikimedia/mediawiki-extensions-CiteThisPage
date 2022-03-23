@@ -3,6 +3,7 @@
 namespace MediaWiki\Extension\CiteThisPage;
 
 use FormSpecialPage;
+use Html;
 use HTMLForm;
 use MediaWiki\Revision\RevisionLookup;
 use Parser;
@@ -128,8 +129,11 @@ class SpecialCiteThisPage extends FormSpecialPage {
 		$revTimestamp = $this->revisionLookup->getTimestampFromId( $revId );
 
 		if ( !$revTimestamp ) {
-			$out->wrapWikiMsg( '<div class="errorbox">$1</div>',
-				[ 'citethispage-badrevision', $title->getPrefixedText(), $revId ] );
+			$out->addHTML(
+				Html::errorBox(
+					$out->msg( 'citethispage-badrevision', $title->getPrefixedText(), $revId )->parse()
+				)
+			);
 			return;
 		}
 
