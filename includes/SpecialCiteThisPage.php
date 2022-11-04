@@ -180,10 +180,10 @@ class SpecialCiteThisPage extends FormSpecialPage {
 			$dir = __DIR__ . '/../';
 			$contentLang = $this->getContentLanguage();
 			$code = $contentLang->lc( $contentLang->getCode() );
-			if ( file_exists( "${dir}citethispage-content-$code" ) ) {
-				$msg = file_get_contents( "${dir}citethispage-content-$code" );
-			} elseif ( file_exists( "${dir}citethispage-content" ) ) {
-				$msg = file_get_contents( "${dir}citethispage-content" );
+			if ( file_exists( "{$dir}citethispage-content-$code" ) ) {
+				$msg = file_get_contents( "{$dir}citethispage-content-$code" );
+			} elseif ( file_exists( "{$dir}citethispage-content" ) ) {
+				$msg = file_get_contents( "{$dir}citethispage-content" );
 			}
 		}
 
