@@ -56,6 +56,7 @@ class Hooks implements \MediaWiki\Hook\SidebarBeforeOutputHook {
 		$citeThisPageLink = [
 			'id' => 't-cite',
 			'href' => $citeURL,
+			'icon' => 'quotes',
 			'text' => $skin->msg( 'citethispage-link' )->text(),
 			// Message keys: 'tooltip-citethispage', 'accesskey-citethispage'
 			'single-id' => 'citethispage',
