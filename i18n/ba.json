@@ -3,11 +3,12 @@
 		"authors": [
 			"Assele",
 			"Haqmar",
-			"Sagan"
+			"Sagan",
+			"З. ӘЙЛЕ"
 		]
 	},
 	"citethispage": "Өҙөмтәләү",
-	"citethispage-desc": "[[Special:Cite|Өҙөмтә яһау]] ярҙамсы битен һәм ҡоралдарҙа һылтанма өҫтәй",
+	"citethispage-desc": "Ҡоралдарҙа [[Special:Cite|өҙөмтә]] махсус битен һәм һылтанма өҫтәй",
 	"citethispage-link": "Биттән өҙөмтә яһарға",
 	"tooltip-citethispage": "Был битте нисек өҙөмтәләргә кәрәклеге тураһында мәғлүмәт",
 	"citethispage-change-submit": "Өҙөмтәләргә",
