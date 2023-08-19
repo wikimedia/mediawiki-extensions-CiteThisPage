@@ -3,8 +3,8 @@
 namespace MediaWiki\Extension\CiteThisPage;
 
 use Config;
+use MediaWiki\Title\Title;
 use SpecialPage;
-use Title;
 
 class Hooks implements \MediaWiki\Hook\SidebarBeforeOutputHook {
 	/**
