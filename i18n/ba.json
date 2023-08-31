@@ -7,10 +7,10 @@
 			"З. ӘЙЛЕ"
 		]
 	},
-	"citethispage": "Өҙөмтәләү",
-	"citethispage-desc": "Ҡоралдарҙа [[Special:Cite|өҙөмтә]] махсус битен һәм һылтанма өҫтәй",
+	"citethispage": "Биттән өҙөмтә яһарға",
+	"citethispage-desc": "Ҡоралдарға [[Special:CiteThisPage|өҙөмтә]] махсус битен һәм һылтанма өҫтәй",
 	"citethispage-link": "Биттән өҙөмтә яһарға",
-	"tooltip-citethispage": "Был битте нисек өҙөмтәләргә кәрәклеге тураһында мәғлүмәт",
-	"citethispage-change-submit": "Өҙөмтәләргә",
+	"tooltip-citethispage": "Был биттән нисек өҙөмтә яһау тураһында мәғлүмәт",
+	"citethispage-change-submit": "Өҙөмтә яһарға",
 	"citethispage-change-target": "Бит:"
 }
