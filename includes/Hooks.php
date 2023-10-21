@@ -41,7 +41,7 @@ class Hooks implements \MediaWiki\Hook\SidebarBeforeOutputHook {
 
 		$revid = $out->getRevisionId();
 
-		if ( $revid === 0 || empty( $revid ) ) {
+		if ( $revid === 0 || $revid === null ) {
 			return;
 		}
 
