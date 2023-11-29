@@ -1,8 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"AaaRazak"
+			"AaaRazak",
+			"Soumaya"
 		]
 	},
-	"citethispage-link": "We yel-bundi ada pagbo"
+	"citethispage": "Sõng-y seb-kãngã",
+	"citethispage-desc": "Adds a special page and toolbox link to [Special:CiteThisPage citation]",
+	"citethispage-link": "We yel-bundi ada pagbo",
+	"tooltip-citethispage": "Sõsg ning sẽn wilgd tɩ d tõe n dɩka a zug-kãngã",
+	"citethispage-change-submit": "D sẽn wilg tɩ",
+	"citethispage-change-target": "Nenga:",
+	"citethispage-badrevision": "Yĩngr: pa yãend leebg ning sẽn be seb-nengã \"$1\" ne leebg ID $2."
 }
