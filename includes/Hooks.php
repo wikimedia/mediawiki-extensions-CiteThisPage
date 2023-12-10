@@ -2,9 +2,9 @@
 
 namespace MediaWiki\Extension\CiteThisPage;
 
-use Config;
+use MediaWiki\Config\Config;
+use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\Title\Title;
-use SpecialPage;
 
 class Hooks implements \MediaWiki\Hook\SidebarBeforeOutputHook {
 	/**
