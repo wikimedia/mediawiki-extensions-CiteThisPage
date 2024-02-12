@@ -7,9 +7,11 @@
 			"Wertuose"
 		]
 	},
-	"citethispage": "Sayt",
+	"citethispage": "Bu Səhifəni İstinad Et",
+	"citethispage-desc": "Xüsusi [[Special:CiteThisPage|istinad]] səhifəsi və alətlər qutusu keçidi əlavə edir",
 	"citethispage-link": "Bu səhifəyə istinad et",
-	"tooltip-citethispage": "Bu səhifəni istinadən məlumat",
-	"citethispage-change-submit": "Sayt",
-	"citethispage-change-target": "Səhifə:"
+	"tooltip-citethispage": "Bu səhifəyə necə istinad etmək barədə məlumat",
+	"citethispage-change-submit": "İstinad",
+	"citethispage-change-target": "Səhifə:",
+	"citethispage-badrevision": "Xəta: \"$1\" səhifəsində versiya ID-si $2 olan heç bir versiya tapılmadı."
 }
