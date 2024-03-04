@@ -4,13 +4,15 @@
 			"Assele",
 			"Haqmar",
 			"Sagan",
-			"З. ӘЙЛЕ"
+			"З. ӘЙЛЕ",
+			"Bashkorttan"
 		]
 	},
-	"citethispage": "Биттән өҙөмтә яһарға",
+	"citethispage": "Биттән өҙөмтә яһау",
 	"citethispage-desc": "Ҡоралдарға [[Special:CiteThisPage|өҙөмтә]] махсус битен һәм һылтанма өҫтәй",
 	"citethispage-link": "Биттән өҙөмтә яһарға",
 	"tooltip-citethispage": "Был биттән нисек өҙөмтә яһау тураһында мәғлүмәт",
 	"citethispage-change-submit": "Өҙөмтә яһарға",
-	"citethispage-change-target": "Бит:"
+	"citethispage-change-target": "Бит:",
+	"citethispage-badrevision": " Хата: \"$1\" битенең $2 идентификаторлы бер өлгөһөн дә табып булманы."
 }
