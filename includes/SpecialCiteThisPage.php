@@ -2,12 +2,12 @@
 
 namespace MediaWiki\Extension\CiteThisPage;
 
-use HTMLForm;
 use MediaWiki\Html\Html;
+use MediaWiki\HTMLForm\HTMLForm;
+use MediaWiki\Parser\Parser;
 use MediaWiki\Revision\RevisionLookup;
 use MediaWiki\SpecialPage\FormSpecialPage;
 use MediaWiki\Title\Title;
-use Parser;
 use ParserFactory;
 use ParserOptions;
 use SearchEngineFactory;
