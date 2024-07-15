@@ -5,5 +5,10 @@
 		]
 	},
 	"citethispage": "Citovanje",
-	"citethispage-link": "Citovati tutu stranicu"
+	"citethispage-desc": "Dodavaje specialnu stranicu [[Special:CiteThisPage|citovanje]] i link na panel orudij",
+	"citethispage-link": "Citovati tutu stranicu",
+	"tooltip-citethispage": "Informacija o tom, kako citovati tutu stranicu",
+	"citethispage-change-submit": "Citovati",
+	"citethispage-change-target": "Stranica:",
+	"citethispage-badrevision": "Pogrěška: ne najdena nijedna versija stranice «$1» s identifikatorom versije $2."
 }
