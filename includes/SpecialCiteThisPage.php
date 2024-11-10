@@ -56,6 +56,9 @@ class SpecialCiteThisPage extends FormSpecialPage {
 		$this->setHeaders();
 		$this->addHelpLink( 'Extension:CiteThisPage' );
 		parent::execute( $par );
+		if ( $par ) {
+			$this->title = Title::newFromText( $par );
+		}
 		if ( $this->title instanceof Title ) {
 			$id = $this->getRequest()->getInt( 'id' );
 			$this->showCitations( $this->title, $id );
