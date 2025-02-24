@@ -3,9 +3,15 @@
 		"authors": [
 			"Jose77",
 			"Pare Mo",
-			"Redhotchili23"
+			"Redhotchili23",
+			"Exec8"
 		]
 	},
+	"citethispage": "I-cite Ini nga Pahina",
+	"citethispage-desc": "Nagadugang sang [[Special:CiteThisPage|citation]] nga pinasahi nga pahina kag link sang toolbox",
 	"citethispage-link": "Tumuron ining panid",
-	"tooltip-citethispage": "Informasyon tuhoy sa pagsitar sining panid"
+	"tooltip-citethispage": "Informasyon tuhoy sa pagsitar sining panid",
+	"citethispage-change-submit": "Cite",
+	"citethispage-change-target": "Pahina:",
+	"citethispage-badrevision": "Sayop: wala sing makita nga rebisyon para sa pahina nga \" $1 \" nga may rebisyon ID $2 ."
 }
