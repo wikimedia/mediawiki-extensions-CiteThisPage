@@ -160,7 +160,7 @@ class SpecialCiteThisPage extends FormSpecialPage {
 		);
 
 		$this->getOutput()->addModuleStyles( 'ext.citeThisPage' );
-		$this->getOutput()->addParserOutputContent( $ret, [
+		$this->getOutput()->addParserOutputContent( $ret, $parserOptions, [
 			'enableSectionEditLinks' => false,
 		] );
 	}
