@@ -199,6 +199,7 @@ class SpecialCiteThisPage extends FormSpecialPage {
 		$parserOptions = ParserOptions::newFromContext( $this->getContext() );
 		$parserOptions->setDateFormat( 'default' );
 		$parserOptions->setInterfaceMessage( true );
+		$parserOptions->setIsMessage( true );
 		return $parserOptions;
 	}
 
