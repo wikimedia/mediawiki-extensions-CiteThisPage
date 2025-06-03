@@ -166,6 +166,10 @@ class SpecialCiteThisPage extends FormSpecialPage {
 		$this->getOutput()->addParserOutputContent( $ret, $parserOptions, [
 			'enableSectionEditLinks' => false,
 		] );
+		$tocData = $ret->getTOCData();
+		if ( $tocData !== null ) {
+			$this->getOutput()->setTOCData( $tocData );
+		}
 	}
 
 	/**
