@@ -363,7 +363,7 @@ $specialPageAliases['scn'] = [
 	'CiteThisPage' => [ 'Cita' ],
 ];
 
-/** Serbo-Croatian (srpsko-hrvatski) */
+/** Serbo-Croatian (srpskohrvatski / српскохрватски) */
 $specialPageAliases['sh'] = [
 	'CiteThisPage' => [ 'Citiraj', 'Citiraj_ovu_stranicu', 'Citiraj_ovu_stranu' ],
 ];
