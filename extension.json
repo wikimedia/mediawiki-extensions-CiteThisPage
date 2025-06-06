@@ -29,7 +29,7 @@
 	},
 	"ResourceModules": {
 		"ext.citeThisPage": {
-			"styles": "ext.citeThisPage.css"
+			"styles": "ext.citeThisPage.less"
 		}
 	},
 	"ResourceFileModulePaths": {
