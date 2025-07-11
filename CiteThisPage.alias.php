@@ -453,12 +453,17 @@ $specialPageAliases['yue'] = [
 	'CiteThisPage' => [ '引用' ],
 ];
 
-/** Simplified Chinese (中文（简体）‎) */
+/** Chinese (中文) */
+$specialPageAliases['zh'] = [
+	'CiteThisPage' => [ 'CiteThisPage' ],
+];
+
+/** Simplified Chinese (中文（简体）) */
 $specialPageAliases['zh-hans'] = [
 	'CiteThisPage' => [ '引用此页面', '引用' ],
 ];
 
-/** Traditional Chinese (中文（繁體）‎) */
+/** Traditional Chinese (中文（繁體）) */
 $specialPageAliases['zh-hant'] = [
-	'CiteThisPage' => [ '引用' ],
+	'CiteThisPage' => [ '引用此頁面', '引用' ],
 ];
