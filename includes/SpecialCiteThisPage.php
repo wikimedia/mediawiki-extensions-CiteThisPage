@@ -24,29 +24,12 @@ class SpecialCiteThisPage extends FormSpecialPage {
 	 */
 	protected $title = false;
 
-	/** @var SearchEngineFactory */
-	private $searchEngineFactory;
-
-	/** @var RevisionLookup */
-	private $revisionLookup;
-
-	/** @var ParserFactory */
-	private $parserFactory;
-
-	/**
-	 * @param SearchEngineFactory $searchEngineFactory
-	 * @param RevisionLookup $revisionLookup
-	 * @param ParserFactory $parserFactory
-	 */
 	public function __construct(
-		SearchEngineFactory $searchEngineFactory,
-		RevisionLookup $revisionLookup,
-		ParserFactory $parserFactory
+		private readonly SearchEngineFactory $searchEngineFactory,
+		private readonly RevisionLookup $revisionLookup,
+		private readonly ParserFactory $parserFactory,
 	) {
 		parent::__construct( 'CiteThisPage' );
-		$this->searchEngineFactory = $searchEngineFactory;
-		$this->revisionLookup = $revisionLookup;
-		$this->parserFactory = $parserFactory;
 	}
 
 	/**
