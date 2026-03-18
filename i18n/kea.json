@@ -1,13 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
+			"GrogeXaKaba",
 			"Letra.berdi",
 			"Quintino Lopes Castro Tavares",
 			"Waldyrious"
 		]
 	},
 	"citethispage": "Sita es pájina",
-	"citethispage-desc": "Ta jera un pájina spisial di [[Special:CiteThisPage|sitason]] i un ligason pa el na lista di faraméntas",
+	"citethispage-desc": "Ta kirsenta un pájina spisial di [[Special:CiteThisPage|sitason]] i un ligason na lista di faraméntas",
 	"citethispage-link": "Sita es pájina",
 	"tooltip-citethispage": "Nfurmason sobri kumó bu debi sita es pájina",
 	"citethispage-change-submit": "Sita",
