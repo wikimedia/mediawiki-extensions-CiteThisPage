@@ -8,9 +8,9 @@ use MediaWiki\Parser\Parser;
 use MediaWiki\Parser\ParserFactory;
 use MediaWiki\Parser\ParserOptions;
 use MediaWiki\Revision\RevisionLookup;
+use MediaWiki\Search\SearchEngineFactory;
 use MediaWiki\SpecialPage\FormSpecialPage;
 use MediaWiki\Title\Title;
-use SearchEngineFactory;
 
 class SpecialCiteThisPage extends FormSpecialPage {
 

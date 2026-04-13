@@ -3,10 +3,11 @@
 namespace MediaWiki\Extension\CiteThisPage;
 
 use MediaWiki\Config\Config;
+use MediaWiki\Skin\Hook\SidebarBeforeOutputHook;
 use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\Title\Title;
 
-class Hooks implements \MediaWiki\Hook\SidebarBeforeOutputHook {
+class Hooks implements SidebarBeforeOutputHook {
 	/**
 	 * Checks, if the "cite this page" link should be added. By default the link is added to all
 	 * pages in the main namespace, and additionally to pages, which are in one of the namespaces
