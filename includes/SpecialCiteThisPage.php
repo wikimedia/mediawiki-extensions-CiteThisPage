@@ -202,7 +202,7 @@ class SpecialCiteThisPage extends FormSpecialPage {
 			/* $linestart = */ false
 		);
 
-		return Parser::stripOuterParagraph( $ret->getRawText() );
+		return Parser::stripOuterParagraph( $ret->getContentHolderText() );
 	}
 
 	/** @inheritDoc */
