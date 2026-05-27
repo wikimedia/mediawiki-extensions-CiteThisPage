@@ -6,6 +6,9 @@
 			"Kallmemel"
 		]
 	},
+	"citethispage": "Sita e página aki",
 	"citethispage-link": "Sita e página aki",
-	"tooltip-citethispage": "Informashon tokante kon pa sitá e página aki"
+	"tooltip-citethispage": "Informashon tokante kon pa sitá e página aki",
+	"citethispage-change-submit": "Sita",
+	"citethispage-change-target": "Página:"
 }
