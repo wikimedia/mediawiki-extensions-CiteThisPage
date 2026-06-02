@@ -7,11 +7,12 @@
 			"Jhertel",
 			"Morten LJ",
 			"Peter Alberti",
-			"Weblars"
+			"Weblars",
+			"Steenth"
 		]
 	},
-	"citethispage": "Referér",
-	"citethispage-desc": "Tilføjer en [[Special:Cite|specialside til reference]] og en henvisning i værktøjsmenuen",
+	"citethispage": "Citer denne side",
+	"citethispage-desc": "Tilføjer en [[Special:CiteThisPage|specialside til reference]] og en henvisning i værktøjsmenuen",
 	"citethispage-link": "Referer til denne side",
 	"tooltip-citethispage": "Information om, hvordan man kan citere denne side",
 	"citethispage-change-submit": "Anvend som reference",
