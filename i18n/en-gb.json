@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Alhadis"
+		]
+	},
+	"citethispage": "Cite This Page",
+	"citethispage-desc": "Adds a [[Special:CiteThisPage|citation]] special page and toolbox link",
+	"citethispage-link": "Cite this page",
+	"tooltip-citethispage": "Information on how to cite this page",
+	"citethispage-change-submit": "Cite",
+	"citethispage-change-target": "Page:",
+	"citethispage-badrevision": "Error: could not find any revision for the page \"$1\" with the revision ID $2."
+}
