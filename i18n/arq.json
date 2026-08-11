@@ -4,6 +4,11 @@
 			"Bachounda"
 		]
 	},
+	"citethispage": "استشهد بهذه الصفحة",
+	"citethispage-desc": "يضيف صفحة [[Special:CiteThisPage|استشهاد]] خاصة ووصلة صندوق أدوات",
 	"citethispage-link": "استشهد بهاد الباجه",
-	"tooltip-citethispage": "معلومات نتاع كيفاش  تستشهد بباجة"
+	"tooltip-citethispage": "معلومات نتاع كيفاش  تستشهد بباجة",
+	"citethispage-change-submit": "استشهد",
+	"citethispage-change-target": "الصفحه:",
+	"citethispage-badrevision": "غلط: ما لقيناش أي نسخة للصفحة \"$1\" بالمعرف $2."
 }
