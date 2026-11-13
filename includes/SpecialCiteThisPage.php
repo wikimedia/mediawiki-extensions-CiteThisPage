@@ -52,6 +52,7 @@ class SpecialCiteThisPage extends FormSpecialPage {
 				'name' => 'page',
 				'type' => 'title',
 				'exists' => true,
+				'creatable' => true,
 				'default' => $this->par ?? '',
 				'label-message' => 'citethispage-change-target'
 			]
