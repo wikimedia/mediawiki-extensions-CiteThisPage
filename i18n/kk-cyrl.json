@@ -3,11 +3,12 @@
 		"authors": [
 			"Casserium",
 			"Kaztrans",
-			"Mirgulkali"
+			"Mirgulkali",
+			"Wikuiser"
 		]
 	},
 	"citethispage": "Дәйексөз алу",
-	"citethispage-desc": "[[Special:Cite|Дәйексөз]] арнайы бетін және құрал сілтемесін қосады",
+	"citethispage-desc": "[[Special:CiteThisPage|Дәйексөз]] арнайы бетін және құрал жинағы сілтемесін қосады",
 	"citethispage-link": "Беттен дәйексөз алу",
 	"tooltip-citethispage": "Бұл беттен қалай дәйексөз алуға болатыны туралы мәлімет",
 	"citethispage-change-submit": "Дәйексөз ал!",
